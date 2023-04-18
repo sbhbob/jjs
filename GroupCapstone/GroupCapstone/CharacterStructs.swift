@@ -26,7 +26,7 @@ class Character {
 
 // MARK: ELEMENT ENUM
 
-enum Element {
+enum Element: CaseIterable {
     case firecave, ocean, stormySky, volcano, mountain, plains, parkingGarage, timesSquare, graveyard, outerSpace, yourMomsHouse, CERN, swamp, sewer
 }
 
