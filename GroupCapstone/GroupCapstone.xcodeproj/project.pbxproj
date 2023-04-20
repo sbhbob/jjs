@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2368833F29EEFC95002BBFCB /* Battle Scene .swift in Sources */ = {isa = PBXBuildFile; fileRef = 2368833E29EEFC95002BBFCB /* Battle Scene .swift */; };
 		EA098E6829E84EB50041614A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA098E6729E84EB50041614A /* AppDelegate.swift */; };
 		EA098E6A29E84EB50041614A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA098E6929E84EB50041614A /* SceneDelegate.swift */; };
 		EA098E6C29E84EB50041614A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA098E6B29E84EB50041614A /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2368833E29EEFC95002BBFCB /* Battle Scene .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Battle Scene .swift"; sourceTree = "<group>"; };
 		EA098E6429E84EB50041614A /* GroupCapstone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroupCapstone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA098E6729E84EB50041614A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA098E6929E84EB50041614A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				EA098E6929E84EB50041614A /* SceneDelegate.swift */,
 				EA098E6B29E84EB50041614A /* ViewController.swift */,
 				EA098E6D29E84EB50041614A /* Main.storyboard */,
+				2368833E29EEFC95002BBFCB /* Battle Scene .swift */,
 				EA098E7029E84EB70041614A /* Assets.xcassets */,
 				EA098E7229E84EB70041614A /* LaunchScreen.storyboard */,
 				EA098E7529E84EB70041614A /* Info.plist */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2368833F29EEFC95002BBFCB /* Battle Scene .swift in Sources */,
 				EA098E6C29E84EB50041614A /* ViewController.swift in Sources */,
 				EA098E6829E84EB50041614A /* AppDelegate.swift in Sources */,
 				EA098E6A29E84EB50041614A /* SceneDelegate.swift in Sources */,
