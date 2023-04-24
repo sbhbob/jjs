@@ -20,6 +20,7 @@ struct DetermineEnvironment {
     }
 }
 // How to call this function for a random environment
+//I'm sure theres a better way but for now it should work
 //if let randomElement = DetermineEnvironment.getRandomElement() {
 //    print("Random element: \(randomElement)")
 //} else {
