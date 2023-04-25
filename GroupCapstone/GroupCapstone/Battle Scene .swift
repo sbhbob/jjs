@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class BattleSceneViewController {
+class BattleSceneViewController: UIViewController {
     
     // firecave, ocean, stormySky, volcano, mountain, plains, parkingGarage, timesSquare, graveyard, outerSpace, yourMomsHouse, CERN, swamp, sewer
     
@@ -29,6 +29,7 @@ class BattleSceneViewController {
     @IBOutlet weak var SewerElement: UIImageView!
     
     
+
     
     
 }

@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		0476A2AA29EDCF2E004BC38B /* DetermineEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0476A2A929EDCF2E004BC38B /* DetermineEnvironment.swift */; };
 		0476A2AC29EEDF43004BC38B /* WinDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0476A2AB29EEDF43004BC38B /* WinDescription.swift */; };
-		EA063B5429ED9E880077420C /* DetermineWinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA063B5329ED9E880077420C /* DetermineWinner.swift */; };
 		2368833F29EEFC95002BBFCB /* Battle Scene .swift in Sources */ = {isa = PBXBuildFile; fileRef = 2368833E29EEFC95002BBFCB /* Battle Scene .swift */; };
+		2377391D29F8122400D78161 /* PlayerOneAndTwoScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2377391C29F8122400D78161 /* PlayerOneAndTwoScene.swift */; };
+		EA063B5429ED9E880077420C /* DetermineWinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA063B5329ED9E880077420C /* DetermineWinner.swift */; };
 		EA098E6829E84EB50041614A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA098E6729E84EB50041614A /* AppDelegate.swift */; };
 		EA098E6A29E84EB50041614A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA098E6929E84EB50041614A /* SceneDelegate.swift */; };
 		EA098E6C29E84EB50041614A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA098E6B29E84EB50041614A /* ViewController.swift */; };
@@ -24,8 +25,9 @@
 /* Begin PBXFileReference section */
 		0476A2A929EDCF2E004BC38B /* DetermineEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetermineEnvironment.swift; sourceTree = "<group>"; };
 		0476A2AB29EEDF43004BC38B /* WinDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinDescription.swift; sourceTree = "<group>"; };
-		EA063B5329ED9E880077420C /* DetermineWinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetermineWinner.swift; sourceTree = "<group>"; };
 		2368833E29EEFC95002BBFCB /* Battle Scene .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Battle Scene .swift"; sourceTree = "<group>"; };
+		2377391C29F8122400D78161 /* PlayerOneAndTwoScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerOneAndTwoScene.swift; sourceTree = "<group>"; };
+		EA063B5329ED9E880077420C /* DetermineWinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetermineWinner.swift; sourceTree = "<group>"; };
 		EA098E6429E84EB50041614A /* GroupCapstone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroupCapstone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA098E6729E84EB50041614A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA098E6929E84EB50041614A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				0476A2A929EDCF2E004BC38B /* DetermineEnvironment.swift */,
 				0476A2AB29EEDF43004BC38B /* WinDescription.swift */,
 				2368833E29EEFC95002BBFCB /* Battle Scene .swift */,
+				2377391C29F8122400D78161 /* PlayerOneAndTwoScene.swift */,
 				EA098E7029E84EB70041614A /* Assets.xcassets */,
 				EA098E7229E84EB70041614A /* LaunchScreen.storyboard */,
 				EA098E7529E84EB70041614A /* Info.plist */,
@@ -161,6 +164,7 @@
 				0476A2AA29EDCF2E004BC38B /* DetermineEnvironment.swift in Sources */,
 				2368833F29EEFC95002BBFCB /* Battle Scene .swift in Sources */,
 				EA098E6C29E84EB50041614A /* ViewController.swift in Sources */,
+				2377391D29F8122400D78161 /* PlayerOneAndTwoScene.swift in Sources */,
 				EA098E6829E84EB50041614A /* AppDelegate.swift in Sources */,
 				0476A2AC29EEDF43004BC38B /* WinDescription.swift in Sources */,
 				EA098E7C29E85AA60041614A /* CharacterStructs.swift in Sources */,
