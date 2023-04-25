@@ -21,7 +21,7 @@ class BattleSceneViewController {
             let randomIndex = Int.random(in: 0..<statusEffect.count)
             
             // Check if the selected character is not already in our result array
-            if !randomStats.contains(where: {$0 === statusEffect[randomIndex]}) {
+            if !randomStats.contains(where: { $0 === statusEffect[randomIndex]}) {
                 randomStats.append(statusEffect[randomIndex])
             }
         }
@@ -38,14 +38,15 @@ class BattleSceneViewController {
         
         // Loop until we have 3 characters in our result array
         while randomCharacters.count < 3 {
+            
             // Select a random index in the input array
             let randomIndex = Int.random(in: 0..<characters.count)
             
             // Check if the selected character is not already in our result array
             if !randomCharacters.contains(where: { $0 === characters[randomIndex] }) {
                 randomCharacters.append(characters[randomIndex])
-            }    }
-        
+            }
+        }
         return randomCharacters
     }
     //  To call it
