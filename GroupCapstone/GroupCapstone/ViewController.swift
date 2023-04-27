@@ -14,6 +14,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+
+    
+    
+
 ////    @IBAction func StartBattleButton(_ sender: UIButton) {
 ////        performSegue(withIdentifier: "StartBattleSegue", sender: nil)
 ////
@@ -35,6 +39,7 @@ class ViewController: UIViewController {
 //                   print("Found an error when loading an Environment")
 //               }
 //       }
+
 
 //
 //    @IBAction func rollButtonPressed(_ sender: UIButton) {
