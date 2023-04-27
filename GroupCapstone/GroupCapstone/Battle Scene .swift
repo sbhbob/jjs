@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 
+
 class BattleSceneViewController: UIViewController {
     
     // firecave, ocean, stormySky, volcano, mountain, plains, parkingGarage, timesSquare, graveyard, outerSpace, yourMomsHouse, CERN, swamp, sewer
@@ -77,5 +78,9 @@ class BattleSceneViewController: UIViewController {
     }
     //  To call it
     // getRandomCharacters(characterArray)
+    
+    
+    
+
     
 }
