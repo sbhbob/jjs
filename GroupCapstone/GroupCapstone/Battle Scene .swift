@@ -19,6 +19,7 @@ class BattleSceneViewController: UIViewController {
 
 
 
+
 //For random statusEffect
     let statusEffectArray: [StatusEffect] = [GodPowers(), RicksPortalGun(), AISlaves(), AncientDarkMagicks(), Memories(), PhilosophersStone(), IlluminatiMember(), Bribes(), NoMorals(), ShadowClones(), WitchesCurse(), MissingNo(), Genie(), Enlightened(), UltraPerception(), JackedPikachu(), Velociraptor(), Firebending(), LightningBreath(), Confidence(), Teleportation(), Religious(), Flubber(), TimeFreezer(), JungleBaby(), Influential(), SixthSense(), PropheticDreams(), Blingin(), MonkeysPaw(), NoMercy(), Entrepreneur(), WaterShaman(), SharkTeeth(), CardThrower(), Thighs4Life(), BoinicLimbs(), Informed(),PopEye(), MarriedWell(), BlackBelt(), Superfan(), Hedonist(), ElkMeat(), Hunter(), YardSale(), Vegan(), Employed(), WellCaffienated(), JustAte(), HotDogMaster(), PriusOwner(), TreeHugger(), SamsungOnly(), WeedleCollector(), MtechTeacher(), RobSteedStrength(), NoSweetTaste(), WhisperTalker(), WaterAllergy(), FearOfOpenSpaces(), SlowerTime(), SourLemonade(), RandomStone(), NoSmile(), MetalTaste(), UncontrollableTremors(), RottenEggSmell(), OwnSweatAllergy(), BirdPhobia(), NoPainSense(), ConstantVertigo(), FireBreather(), NoOpposableThumbs(), InvertedMovement(), EyeContactFaint(), SlowMo(), TremblingLegs(), TremblingArms(), ChronicBackPain(), HormonalRage(), Exhaustion(), Narcolepsy(), Confusion(), UncontrollableCrying(), SpitAllergy(), AlwaysSticky(), SneezingFits(), ButterFingers(), Magnetized(), ChronicBadLuck(), SevereMotionSickness(), AlwaysCold(), BloodPhobia(), NoiseSensitivity(), UncontrollableDancing(), RhymeCommunication(), CompulsiveLying(), ConstantSweating(), Poisoned()]
 
@@ -114,6 +115,9 @@ class BattleSceneViewController: UIViewController {
 
 
     }
+
+    
+
 
     
 
