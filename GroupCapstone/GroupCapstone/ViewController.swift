@@ -14,18 +14,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-////    @IBAction func StartBattleButton(_ sender: UIButton) {
-////        performSegue(withIdentifier: "StartBattleSegue", sender: nil)
-////
-////        let sceneElement = [UIImage(named: "DiceOne"),UIImage(named: "DiceTwo"),UIImage(named: "DiceThree"),UIImage(named: "DiceFour"),UIImage(named: "DiceFive"),UIImage(named: "DiceSix")]
-////
-////        diceImageView1.image = diceArray[Int.random(in: 0...5)] //DiceImageView 1 is what the image view is that will be showing
-//
-//
-////        leftDiceNumber = leftDiceNumber + 1 // is the same as leftDiceNumber+=1
-//
-//
-//    }
+    
     
 //
 //    @IBAction func rollButtonPressed(_ sender: UIButton) {

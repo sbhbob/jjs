@@ -14,23 +14,8 @@ class BattleSceneViewController: UIViewController {
     // firecave, ocean, stormySky, volcano, mountain, plains, parkingGarage, timesSquare, graveyard, outerSpace, yourMomsHouse, CERN, swamp, sewer
     
     
-    @IBOutlet weak var FireCaveElement: UIImageView!
-    @IBOutlet weak var OceanElement: UIImageView!
-    @IBOutlet weak var StormySkyElement: UIImageView!
-    @IBOutlet weak var VolcanoElement: UIImageView!
-    @IBOutlet weak var MountainElement: UIImageView!
-    @IBOutlet weak var PlainsElement: UIImageView!
-    @IBOutlet weak var ParkingGarageElement: UIImageView!
-    @IBOutlet weak var TimesSquareElement: UIImageView!
-    @IBOutlet weak var GraveYardElement: UIImageView!
-    @IBOutlet weak var OuterSpaceElement: UIImageView!
-    @IBOutlet weak var YourMomsHouseElement: UIImageView!
-    @IBOutlet weak var CernElement: UIImageView!
-    @IBOutlet weak var SwampElement: UIImageView!
-    @IBOutlet weak var SewerElement: UIImageView!
-    
-    
-
+    @IBOutlet weak var BattleSceneImage: UIImageView!
+   
 
 
 
@@ -80,7 +65,55 @@ class BattleSceneViewController: UIViewController {
     // getRandomCharacters(characterArray)
     
     
-    
+    @IBAction func randomElement(_ sender: UIButton) {
+   
+
+        let sceneElement = [UIImage(named: "10"),UIImage(named: "Ocean"),UIImage(named: "stormySky"),UIImage(named: "Volcano"),UIImage(named: "Mountain"),UIImage(named: "Plains"), UIImage(named: "ParkingGarage"), UIImage(named: "TimesSquare"), UIImage(named: "Cemetery"), UIImage(named: "OuterSpace"), UIImage(named: "YourMomsHouse"), UIImage(named: "CERN"), UIImage(named: "Swamp"), UIImage(named: "Sewer")]
+        let randomImageIndex = Int.random(in: 0..<sceneElement.count)
+            let randomImage = sceneElement[randomImageIndex]
+            let selectedElement: Element
+
+            switch randomImage?.accessibilityIdentifier {
+            case "10":
+                selectedElement = .firecave
+            case "Ocean":
+                selectedElement = .ocean
+            case "stormySky":
+                selectedElement = .stormySky
+            case "Volcano":
+                selectedElement = .volcano
+            case "Mountain":
+                selectedElement = .mountain
+            case "Plains":
+                selectedElement = .plains
+            case "ParkingGarage":
+                selectedElement = .parkingGarage
+            case "TimesSquare":
+                selectedElement = .timesSquare
+            case "Cemetery":
+                selectedElement = .graveyard
+            case "OuterSpace":
+                selectedElement = .outerSpace
+            case "YourMomsHouse":
+                selectedElement = .yourMomsHouse
+            case "CERN":
+                selectedElement = .CERN
+            case "Swamp":
+                selectedElement = .swamp
+            case "Sewer":
+                selectedElement = .sewer
+            default:
+                selectedElement = .firecave // Default to a known case to avoid runtime errors
+            }
+
+            BattleSceneImage.image = randomImage
+        }
+        
+//    BattleSceneImage.image = sceneElement[Int.random(in: 0...13)] //DiceImageView 1 is what the image view is that will be showing fir
+
+
+
+    }
 
     
-}
+
