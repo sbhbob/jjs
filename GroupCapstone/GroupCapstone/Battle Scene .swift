@@ -79,4 +79,8 @@ class BattleSceneViewController: UIViewController {
     //  To call it
     // getRandomCharacters(characterArray)
     
+    
+    
+
+    
 }
