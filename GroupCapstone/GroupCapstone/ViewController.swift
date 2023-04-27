@@ -26,7 +26,16 @@ class ViewController: UIViewController {
 //
 //
 //    }
-    
+//    to get a random environment
+//       func randomEnvironmentTapped() {
+//           if let randomEnvironment = DetermineEnvironment().getRandomElement() {
+//               print("Random element: \(randomEnvironment)")
+//               } else {
+//                   // handle the case where the function returns nil
+//                   print("Found an error when loading an Environment")
+//               }
+//       }
+
 //
 //    @IBAction func rollButtonPressed(_ sender: UIButton) {
 ////        print("Button got Tapped")

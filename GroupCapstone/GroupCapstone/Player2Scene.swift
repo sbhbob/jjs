@@ -14,7 +14,11 @@ class PlayerTwoScene: UIViewController {
     var cards: String = ""
     var imageView = UIImage()
 
-
+    let statusEffectArrPlayerTwo = StatusEffectArray()
+    let charArrayPlayerTwo = CharacterArray()
+    
+    var charactersPlayerTwo: [Character] = []
+    var statusEffectPlayerTwo: [StatusEffect] = []
     
     @IBOutlet var characterCardsP2: [UIImageView]!
 
@@ -39,6 +43,10 @@ class PlayerTwoScene: UIViewController {
 
     
     
+    @IBAction func playerTwoRandomCharAndStatusEffect(_ sender: Any) {
+        charactersPlayerTwo = charArrayPlayerTwo.getRandomCharacters(charArrayPlayerTwo.characterArray)
+        statusEffectPlayerTwo = statusEffectArrPlayerTwo.getRandomStatusEffect(StatusEffectArray.statusEffectArray)
+    }
     
     
     
