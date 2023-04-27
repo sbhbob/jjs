@@ -13,9 +13,11 @@ class PlayerOneScene: UIViewController {
     var cards: String = ""
     var imageView = UIImage()
 
-
+    var characters: [Character] = []
+    var statusEffect: [StatusEffect] = []
     
-    
+    let statusEffectArr = StatusEffectArray()
+    let charArray = CharacterArray()
     //PLAYER 1
     @IBOutlet var debuffCardsP1: [UIImageView]!
     @IBOutlet var characterCardsP1: [UIImageView]!
@@ -42,11 +44,8 @@ class PlayerOneScene: UIViewController {
     }
 
     
-    
-    
-    
-    
-    
-    
-    
+    @IBAction func randomCharacterAndStatusEffectTapped(_ sender: Any) {
+        characters = charArray.getRandomCharacters(charArray.characterArray)
+        statusEffect = statusEffectArr.getRandomStatusEffect(StatusEffectArray.statusEffectArray)
+    }
 }
