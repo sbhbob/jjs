@@ -18,6 +18,23 @@ class PlayerTwoScene: UIViewController {
     var charactersPlayerTwo: [Character] = []
     var statusEffectPlayerTwo: [StatusEffect] = []
     
+    
+    @IBOutlet weak var P2CharacterCard1: UIImageView!
+    
+    @IBOutlet weak var P2CharacterCard2: UIImageView!
+    
+    
+    @IBOutlet weak var P2CharacterCard3: UIImageView!
+    
+    
+    @IBOutlet weak var P2DebuffCard1: UIImageView!
+    
+    @IBOutlet weak var P2DebuffCard2: UIImageView!
+    
+    @IBOutlet weak var P2DebuffCard3: UIImageView!
+    
+    
+    
     @IBOutlet var characterCardsP2: [UIImageView]!
 
     @IBOutlet var debuffCardsP2: [UIImageView]!

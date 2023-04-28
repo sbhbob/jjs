@@ -17,13 +17,23 @@ class PlayerOneScene: UIViewController {
     var statusEffect: [StatusEffect] = []
 
     //PLAYER 1
-    @IBOutlet var debuffCardsP1: [UIImageView]!
-    @IBOutlet var characterCardsP1: [UIImageView]!
-    
-    
 
+    
+    @IBOutlet weak var P1CharacterCard1: UIImageView!
+    
+    @IBOutlet weak var P1CharacterCard2: UIImageView!
+    
+    @IBOutlet weak var P1CharacterCard3: UIImageView!
+    
+    @IBOutlet weak var P1DebuffCard1: UIImageView!
+    
+    @IBOutlet weak var P1DebuffCard2: UIImageView!
+    
+    @IBOutlet weak var P1DebuffCard3: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+
 
         print(debuffCardsP1)
         
@@ -39,6 +49,7 @@ class PlayerOneScene: UIViewController {
         guard let imageView = sender.view as? UIImageView else { return }
         
         // Handle image tap here
+
     }
 
     

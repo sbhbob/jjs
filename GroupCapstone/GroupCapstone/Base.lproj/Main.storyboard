@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cYG-mG-aYl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cYG-mG-aYl">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -264,12 +263,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="39A-ie-WMw"/>
                     <connections>
-                        <outletCollection property="debuffCardsP1" destination="QfT-ye-1gl" collectionClass="NSMutableArray" id="NAu-dd-WOk"/>
-                        <outletCollection property="debuffCardsP1" destination="xTR-86-fOh" collectionClass="NSMutableArray" id="B7B-8W-9M4"/>
-                        <outletCollection property="debuffCardsP1" destination="qJo-Qf-9aO" collectionClass="NSMutableArray" id="aGD-bF-lIq"/>
-                        <outletCollection property="characterCardsP1" destination="YbI-IJ-zwn" collectionClass="NSMutableArray" id="vXs-UX-2Ay"/>
-                        <outletCollection property="characterCardsP1" destination="HAK-O9-H3p" collectionClass="NSMutableArray" id="vx7-4M-cqU"/>
-                        <outletCollection property="characterCardsP1" destination="hmu-Uu-0nk" collectionClass="NSMutableArray" id="WUo-JP-gc5"/>
+                        <outlet property="P1CharacterCard1" destination="YbI-IJ-zwn" id="PeJ-aT-BWC"/>
+                        <outlet property="P1CharacterCard2" destination="HAK-O9-H3p" id="kTv-ei-eDT"/>
+                        <outlet property="P1CharacterCard3" destination="hmu-Uu-0nk" id="Voj-KZ-sPo"/>
+                        <outlet property="P1DebuffCard1" destination="QfT-ye-1gl" id="SzL-yV-qX4"/>
+                        <outlet property="P1DebuffCard2" destination="xTR-86-fOh" id="YG2-IY-Khr"/>
+                        <outlet property="P1DebuffCard3" destination="qJo-Qf-9aO" id="LYI-N1-WrB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SvX-f0-IB3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -281,7 +280,7 @@
             <objects>
                 <viewController id="YvC-fs-CTw" sceneMemberID="viewController">
                     <view key="view" tag="5" contentMode="scaleToFill" id="AM6-j0-GxB">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screenshot 2023-04-18 at 8.47.10 AM" translatesAutoresizingMaskIntoConstraints="NO" id="EAF-H1-TJx">
@@ -491,12 +490,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="LgO-Jx-D0Q"/>
                     <connections>
-                        <outletCollection property="characterCardsP2" destination="3lg-2Q-QAw" collectionClass="NSMutableArray" id="hvY-lL-gOs"/>
-                        <outletCollection property="characterCardsP2" destination="8GL-bv-RF3" collectionClass="NSMutableArray" id="5i0-gO-RDh"/>
-                        <outletCollection property="characterCardsP2" destination="Wgw-hW-fgR" collectionClass="NSMutableArray" id="iow-OL-MDj"/>
-                        <outletCollection property="debuffCardsP2" destination="J0g-k8-Ia5" collectionClass="NSMutableArray" id="JRj-Dx-Bws"/>
-                        <outletCollection property="debuffCardsP2" destination="FLQ-WI-vua" collectionClass="NSMutableArray" id="39R-aZ-Igv"/>
-                        <outletCollection property="debuffCardsP2" destination="htv-hN-BIB" collectionClass="NSMutableArray" id="oMp-5W-w8X"/>
+                        <outlet property="P2CharacterCard1" destination="3lg-2Q-QAw" id="b1v-2R-RsN"/>
+                        <outlet property="P2CharacterCard2" destination="8GL-bv-RF3" id="dvO-zW-vGP"/>
+                        <outlet property="P2CharacterCard3" destination="Wgw-hW-fgR" id="d8Z-Cl-PXu"/>
+                        <outlet property="P2DebuffCard1" destination="J0g-k8-Ia5" id="coM-Mk-W63"/>
+                        <outlet property="P2DebuffCard2" destination="FLQ-WI-vua" id="MCc-bh-nNd"/>
+                        <outlet property="P2DebuffCard3" destination="htv-hN-BIB" id="zEd-xW-kL3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GB5-YG-bh7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

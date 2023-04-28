@@ -62,12 +62,14 @@ class BattleSceneViewController: UIViewController {
         }
     }
 
+       
     
     func shouldStopCycling(currentImageIndex: Int, targetImageIndex: Int) -> Bool {
         // Stop when the current image index is the target image index
         return currentImageIndex == targetImageIndex
     }
 }
+
 
 
 
