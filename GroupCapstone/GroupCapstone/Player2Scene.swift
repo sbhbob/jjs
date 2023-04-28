@@ -42,8 +42,13 @@ class PlayerTwoScene: UIViewController {
     
     
     @IBAction func playerTwoRandomCharAndStatusEffect(_ sender: Any) {
+    
+        charactersPlayerTwo = charArrayPlayerTwo.getRandomCharacters(CharacterArray.characterArray)
+        statusEffectPlayerTwo = statusEffectArrPlayerTwo.getRandomStatusEffect(StatusEffectArray.statusEffectArray)
+
         charactersPlayerTwo = Randomizers.getRandomCharacters()
         statusEffectPlayerTwo = Randomizers.getRandomStatusEffect()
+
     }
     
     
