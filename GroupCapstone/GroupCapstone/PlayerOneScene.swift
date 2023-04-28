@@ -15,9 +15,7 @@ class PlayerOneScene: UIViewController {
 
     var characters: [Character] = []
     var statusEffect: [StatusEffect] = []
-    
-    let statusEffectArr = StatusEffectArray()
-    let charArray = CharacterArray()
+
     //PLAYER 1
     @IBOutlet var debuffCardsP1: [UIImageView]!
     @IBOutlet var characterCardsP1: [UIImageView]!
@@ -27,9 +25,9 @@ class PlayerOneScene: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        print(debuffCardsP1)
+        
         for imageView in characterCardsP1 + debuffCardsP1  {
-            
-            
             imageView.isUserInteractionEnabled = true
             let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(_:)))
             imageView.addGestureRecognizer(tapGestureRecognizer)
@@ -45,7 +43,14 @@ class PlayerOneScene: UIViewController {
 
     
     @IBAction func randomCharacterAndStatusEffectTapped(_ sender: Any) {
+
         characters = charArray.getRandomCharacters(CharacterArray.characterArray)
         statusEffect = statusEffectArr.getRandomStatusEffect(StatusEffectArray.statusEffectArray)
+
+        characters = Randomizers.getRandomCharacters()
+        statusEffect = Randomizers.getRandomStatusEffect()
+        
+        
+
     }
 }

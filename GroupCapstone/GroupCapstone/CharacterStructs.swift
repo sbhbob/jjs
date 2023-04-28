@@ -32,6 +32,7 @@ struct CharacterArray {
             return randomCharacters
         }
 }
+
 // MARK: CHARACTER CLASS
 
 class Character {

@@ -7,32 +7,6 @@
 
 import Foundation
 
-
-//MARK: STATUS EFFECT STRUCT
-struct StatusEffectArray {
-    //For random statusEffect
-    static let statusEffectArray: [StatusEffect] = [GodPowers(), RicksPortalGun(), AISlaves(), AncientDarkMagicks(), Memories(), PhilosophersStone(), IlluminatiMember(), Bribes(), NoMorals(), ShadowClones(), WitchesCurse(), MissingNo(), Genie(), Enlightened(), UltraPerception(), JackedPikachu(), Velociraptor(), Firebending(), LightningBreath(), Confidence(), Teleportation(), Religious(), Flubber(), TimeFreezer(), JungleBaby(), Influential(), SixthSense(), PropheticDreams(), Blingin(), MonkeysPaw(), NoMercy(), Entrepreneur(), WaterShaman(), SharkTeeth(), CardThrower(), Thighs4Life(), BoinicLimbs(), Informed(), PopEye(), MarriedWell(), BlackBelt(), Superfan(), Hedonist(), ElkMeat(), Hunter(), YardSale(), Vegan(), Employed(), WellCaffienated(), JustAte(), HotDogMaster(), PriusOwner(), TreeHugger(), SamsungOnly(), WeedleCollector(), MtechTeacher(), RobSteedStrength(), NoSweetTaste(), WhisperTalker(), WaterAllergy(), FearOfOpenSpaces(), SlowerTime(), SourLemonade(), RandomStone(), NoSmile(), MetalTaste(), UncontrollableTremors(), RottenEggSmell(), OwnSweatAllergy(), BirdPhobia(), NoPainSense(), ConstantVertigo(), FireBreather(), NoOpposableThumbs(), InvertedMovement(), EyeContactFaint(), SlowMo(), TremblingLegs(), TremblingArms(), ChronicBackPain(), HormonalRage(), Exhaustion(), Narcolepsy(), Confusion(), UncontrollableCrying(), SpitAllergy(), AlwaysSticky(), SneezingFits(), ButterFingers(), Magnetized(), ChronicBadLuck(), SevereMotionSickness(), AlwaysCold(), BloodPhobia(), NoiseSensitivity(), UncontrollableDancing(), RhymeCommunication(), CompulsiveLying(), ConstantSweating(), Poisoned()]
-    
-    
-    func getRandomStatusEffect(_ statusEffect: [StatusEffect]) -> [StatusEffect] {
-        var randomStats: [StatusEffect] = []
-        
-        // Loop until we have 3 characters in our result array
-        while randomStats.count < 3 {
-            
-            // Select a random index in the input array
-            let randomIndex = Int.random(in: 0..<statusEffect.count)
-            
-            // Check if the selected character is not already in our result array
-            if !randomStats.contains(where: { $0 === statusEffect[randomIndex]}) {
-                randomStats.append(statusEffect[randomIndex])
-            }
-        }
-        print(randomStats)
-        return randomStats
-    }
-}
-
 // MARK: STATUS EFFECT CLASS
 
 
