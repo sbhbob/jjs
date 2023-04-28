@@ -69,13 +69,13 @@ class BattleSceneViewController: UIViewController {
     @IBAction func randomElement(_ sender: UIButton) {
    
 
-        let sceneElement = [UIImage(named: "10"),UIImage(named: "Ocean"),UIImage(named: "stormySky"),UIImage(named: "Volcano"),UIImage(named: "Mountain"),UIImage(named: "Plains"), UIImage(named: "ParkingGarage"), UIImage(named: "TimesSquare"), UIImage(named: "Cemetery"), UIImage(named: "OuterSpace"), UIImage(named: "YourMomsHouse"), UIImage(named: "CERN"), UIImage(named: "Swamp"), UIImage(named: "Sewer")]
+        let sceneElement = [UIImage(named: "FireCave"),UIImage(named: "Ocean"),UIImage(named: "stormySky"),UIImage(named: "Volcano"),UIImage(named: "Mountain"),UIImage(named: "Plains"), UIImage(named: "ParkingGarage"), UIImage(named: "TimesSquare"), UIImage(named: "Cemetery"), UIImage(named: "OuterSpace"), UIImage(named: "YourMomsHouse"), UIImage(named: "CERN"), UIImage(named: "Swamp"), UIImage(named: "Sewer")]
         let randomImageIndex = Int.random(in: 0..<sceneElement.count)
             let randomImage = sceneElement[randomImageIndex]
             let selectedElement: Element
 
             switch randomImage?.accessibilityIdentifier {
-            case "10":
+            case "FireCave":
                 selectedElement = .firecave
             case "Ocean":
                 selectedElement = .ocean

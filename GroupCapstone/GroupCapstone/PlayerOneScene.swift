@@ -19,28 +19,37 @@ class PlayerOneScene: UIViewController {
     let statusEffectArr = StatusEffectArray()
     let charArray = CharacterArray()
     //PLAYER 1
-    @IBOutlet var debuffCardsP1: [UIImageView]!
-    @IBOutlet var characterCardsP1: [UIImageView]!
-    
-    
 
+    
+    @IBOutlet weak var P1CharacterCard1: UIImageView!
+    
+    @IBOutlet weak var P1CharacterCard2: UIImageView!
+    
+    @IBOutlet weak var P1CharacterCard3: UIImageView!
+    
+    @IBOutlet weak var P1DebuffCard1: UIImageView!
+    
+    @IBOutlet weak var P1DebuffCard2: UIImageView!
+    
+    @IBOutlet weak var P1DebuffCard3: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        for imageView in characterCardsP1 + debuffCardsP1  {
-            
-            
-            imageView.isUserInteractionEnabled = true
-            let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(_:)))
-            imageView.addGestureRecognizer(tapGestureRecognizer)
-        }
-        
-    }
-
-    @objc func imageTapped(_ sender: UITapGestureRecognizer) {
-        guard let imageView = sender.view as? UIImageView else { return }
-        
-        // Handle image tap here
+//        for imageView in characterCardsP1 + debuffCardsP1  {
+//
+//
+//            imageView.isUserInteractionEnabled = true
+//            let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(_:)))
+//            imageView.addGestureRecognizer(tapGestureRecognizer)
+//        }
+//
+//    }
+//
+//    @objc func imageTapped(_ sender: UITapGestureRecognizer) {
+//        guard let imageView = sender.view as? UIImageView else { return }
+//
+//        // Handle image tap here
     }
 
     
