@@ -21,6 +21,8 @@
 		EA098E7429E84EB70041614A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA098E7229E84EB70041614A /* LaunchScreen.storyboard */; };
 		EA098E7C29E85AA60041614A /* CharacterStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA098E7B29E85AA50041614A /* CharacterStructs.swift */; };
 		EA098E7E29E88F780041614A /* StatusEffectStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA098E7D29E88F780041614A /* StatusEffectStructs.swift */; };
+		EAEF503029FB3C2300E4C34A /* DisplayWinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEF502F29FB3C2300E4C34A /* DisplayWinnerViewController.swift */; };
+		EAEF503229FB4CB100E4C34A /* Randomizers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEF503129FB4CB100E4C34A /* Randomizers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		EA098E7529E84EB70041614A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA098E7B29E85AA50041614A /* CharacterStructs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterStructs.swift; sourceTree = "<group>"; };
 		EA098E7D29E88F780041614A /* StatusEffectStructs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusEffectStructs.swift; sourceTree = "<group>"; };
+		EAEF502F29FB3C2300E4C34A /* DisplayWinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayWinnerViewController.swift; sourceTree = "<group>"; };
+		EAEF503129FB4CB100E4C34A /* Randomizers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Randomizers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,16 +78,18 @@
 			children = (
 				EA098E6729E84EB50041614A /* AppDelegate.swift */,
 				EA098E6929E84EB50041614A /* SceneDelegate.swift */,
-				EA098E6B29E84EB50041614A /* ViewController.swift */,
-				EA098E6D29E84EB50041614A /* Main.storyboard */,
 				EA098E7B29E85AA50041614A /* CharacterStructs.swift */,
 				EA063B5329ED9E880077420C /* DetermineWinner.swift */,
 				EA098E7D29E88F780041614A /* StatusEffectStructs.swift */,
+				EAEF503129FB4CB100E4C34A /* Randomizers.swift */,
 				0476A2A929EDCF2E004BC38B /* DetermineEnvironment.swift */,
 				0476A2AB29EEDF43004BC38B /* WinDescription.swift */,
+				EA098E6D29E84EB50041614A /* Main.storyboard */,
+				EA098E6B29E84EB50041614A /* ViewController.swift */,
 				2368833E29EEFC95002BBFCB /* Battle Scene .swift */,
 				2377391C29F8122400D78161 /* PlayerOneScene.swift */,
 				23FAD27629F8B862003946B7 /* Player2Scene.swift */,
+				EAEF502F29FB3C2300E4C34A /* DisplayWinnerViewController.swift */,
 				EA098E7029E84EB70041614A /* Assets.xcassets */,
 				EA098E7229E84EB70041614A /* LaunchScreen.storyboard */,
 				EA098E7529E84EB70041614A /* Info.plist */,
@@ -165,7 +171,9 @@
 				EA063B5429ED9E880077420C /* DetermineWinner.swift in Sources */,
 				EA098E7E29E88F780041614A /* StatusEffectStructs.swift in Sources */,
 				0476A2AA29EDCF2E004BC38B /* DetermineEnvironment.swift in Sources */,
+				EAEF503229FB4CB100E4C34A /* Randomizers.swift in Sources */,
 				2368833F29EEFC95002BBFCB /* Battle Scene .swift in Sources */,
+				EAEF503029FB3C2300E4C34A /* DisplayWinnerViewController.swift in Sources */,
 				EA098E6C29E84EB50041614A /* ViewController.swift in Sources */,
 				2377391D29F8122400D78161 /* PlayerOneScene.swift in Sources */,
 				23FAD27729F8B862003946B7 /* Player2Scene.swift in Sources */,
