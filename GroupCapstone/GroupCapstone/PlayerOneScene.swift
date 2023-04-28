@@ -44,9 +44,6 @@ class PlayerOneScene: UIViewController {
     
     @IBAction func randomCharacterAndStatusEffectTapped(_ sender: Any) {
 
-        characters = charArray.getRandomCharacters(CharacterArray.characterArray)
-        statusEffect = statusEffectArr.getRandomStatusEffect(StatusEffectArray.statusEffectArray)
-
         characters = Randomizers.getRandomCharacters()
         statusEffect = Randomizers.getRandomStatusEffect()
         

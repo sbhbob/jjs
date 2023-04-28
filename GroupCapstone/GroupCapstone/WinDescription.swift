@@ -13,7 +13,4 @@ struct WinDescription {
     
     
 }
-//func randomWin(arr: [String]) -> String? {
-//    guard !arr.isEmpty else { return nil }
-//   return arr.randomElement()
-//}
+
