@@ -26,7 +26,7 @@ class BattleSceneViewController: UIViewController {
             SceneElement(image: UIImage(named: "Plains")!, element: .plains),
             SceneElement(image: UIImage(named: "ParkingGarage")!, element: .parkingGarage),
             SceneElement(image: UIImage(named: "TimesSquare")!, element: .timesSquare),
-            SceneElement(image: UIImage(named: "Cemetery ")!, element: .graveyard),
+            SceneElement(image: UIImage(named: "Cemetery")!, element: .graveyard),
             SceneElement(image: UIImage(named: "OuterSpace")!, element: .outerSpace),
             SceneElement(image: UIImage(named: "YourMomsHouse")!, element: .yourMomsHouse),
             SceneElement(image: UIImage(named: "CERN")!, element: .CERN),
@@ -37,7 +37,10 @@ class BattleSceneViewController: UIViewController {
         let randomIndex = Int.random(in: 0..<sceneElements.count)
         let randomImage = sceneElements[randomIndex].image
         let selectedElement = sceneElements[randomIndex].element
+        
+//        Should hold the element to then use in determine winner func
         GameManager().element = selectedElement
+        
         print(selectedElement)
         startCyclingImages(imageArray: sceneElements.map { $0.image }, randomImageIndex: randomIndex)
     }
