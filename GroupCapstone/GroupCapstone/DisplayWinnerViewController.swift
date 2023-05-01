@@ -11,7 +11,7 @@ class DisplayWinnerViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        determineWinner(player1: GameManager().player1!.character, player2: GameManager().player2!.character, environment: GameManager().element!)
         // Do any additional setup after loading the view.
     }
     
@@ -48,6 +48,7 @@ class DisplayWinnerViewController: UIViewController {
             return nil
         }
     }
+    
     /*
     // MARK: - Navigation
 

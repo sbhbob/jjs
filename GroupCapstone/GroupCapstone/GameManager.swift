@@ -22,4 +22,5 @@ class GameManager {
 //            let selectedEffect = // get the selected effect from the user input
 //
 //            GameManager.shared.player2 = (selectedCharacter, selectedEffect)
+    var element: Element?
 }
