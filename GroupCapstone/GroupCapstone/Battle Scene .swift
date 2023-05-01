@@ -18,7 +18,7 @@ class BattleSceneViewController: UIViewController {
     
     @IBAction func randomElement(_ sender: UIButton) {
         let sceneElements: [SceneElement] = [
-            SceneElement(image: UIImage(named: "10")!, element: .firecave),
+            SceneElement(image: UIImage(named: "FireCave")!, element: .firecave),
             SceneElement(image: UIImage(named: "Ocean")!, element: .ocean),
             SceneElement(image: UIImage(named: "stormySky")!, element: .stormySky),
             SceneElement(image: UIImage(named: "Volcano")!, element: .volcano),
@@ -31,9 +31,8 @@ class BattleSceneViewController: UIViewController {
             SceneElement(image: UIImage(named: "YourMomsHouse")!, element: .yourMomsHouse),
             SceneElement(image: UIImage(named: "CERN")!, element: .CERN),
             SceneElement(image: UIImage(named: "Swamp")!, element: .swamp),
-            SceneElement(image: UIImage(named: "Sewer")!, element: .sewer)
-        ]
-
+            SceneElement(image: UIImage(named: "Sewer")!, element: .sewer)]
+        
         let randomIndex = Int.random(in: 0..<sceneElements.count)
         let randomImage = sceneElements[randomIndex].image
         let selectedElement = sceneElements[randomIndex].element
@@ -69,11 +68,6 @@ class BattleSceneViewController: UIViewController {
     func shouldStopCycling(currentImageIndex: Int, targetImageIndex: Int) -> Bool {
         // Stop when the current image index is the target image index
         return currentImageIndex == targetImageIndex
-    }
+    }  
 }
-
-
-
-
-
 
