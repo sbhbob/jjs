@@ -34,29 +34,13 @@ class PlayerOneScene: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-
+//        print(debuffCardsP1)
+        
 //        for imageView in characterCardsP1 + debuffCardsP1  {
-//
-//
 //            imageView.isUserInteractionEnabled = true
 //            let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(_:)))
 //            imageView.addGestureRecognizer(tapGestureRecognizer)
 //        }
-//
-//    }
-//
-//    @objc func imageTapped(_ sender: UITapGestureRecognizer) {
-//        guard let imageView = sender.view as? UIImageView else { return }
-//
-//        // Handle image tap here
-=======
-        print(debuffCardsP1)
-        
-        for imageView in characterCardsP1 + debuffCardsP1  {
-            imageView.isUserInteractionEnabled = true
-            let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(_:)))
-            imageView.addGestureRecognizer(tapGestureRecognizer)
-        }
         
     }
 
@@ -64,19 +48,12 @@ class PlayerOneScene: UIViewController {
         guard let imageView = sender.view as? UIImageView else { return }
         
         // Handle image tap here
->>>>>>> 97fa6637bdfcb6d20c7ee6cf6b9b06d7852da6e3
     }
 
     
     @IBAction func randomCharacterAndStatusEffectTapped(_ sender: Any) {
 
-        characters = charArray.getRandomCharacters(CharacterArray.characterArray)
-        statusEffect = statusEffectArr.getRandomStatusEffect(StatusEffectArray.statusEffectArray)
-
         characters = Randomizers.getRandomCharacters()
         statusEffect = Randomizers.getRandomStatusEffect()
-        
-        
-
     }
 }

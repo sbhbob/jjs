@@ -33,53 +33,11 @@ class BattleSceneViewController: UIViewController {
             SceneElement(image: UIImage(named: "Swamp")!, element: .swamp),
             SceneElement(image: UIImage(named: "Sewer")!, element: .sewer)
         ]
-
-
-        let sceneElement = [UIImage(named: "FireCave"),UIImage(named: "Ocean"),UIImage(named: "stormySky"),UIImage(named: "Volcano"),UIImage(named: "Mountain"),UIImage(named: "Plains"), UIImage(named: "ParkingGarage"), UIImage(named: "TimesSquare"), UIImage(named: "Cemetery"), UIImage(named: "OuterSpace"), UIImage(named: "YourMomsHouse"), UIImage(named: "CERN"), UIImage(named: "Swamp"), UIImage(named: "Sewer")]
-        let randomImageIndex = Int.random(in: 0..<sceneElement.count)
-            let randomImage = sceneElement[randomImageIndex]
-            let selectedElement: Element
-
-            switch randomImage?.accessibilityIdentifier {
-            case "FireCave":
-                selectedElement = .firecave
-            case "Ocean":
-                selectedElement = .ocean
-            case "stormySky":
-                selectedElement = .stormySky
-            case "Volcano":
-                selectedElement = .volcano
-            case "Mountain":
-                selectedElement = .mountain
-            case "Plains":
-                selectedElement = .plains
-            case "ParkingGarage":
-                selectedElement = .parkingGarage
-            case "TimesSquare":
-                selectedElement = .timesSquare
-            case "Cemetery":
-                selectedElement = .graveyard
-            case "OuterSpace":
-                selectedElement = .outerSpace
-            case "YourMomsHouse":
-                selectedElement = .yourMomsHouse
-            case "CERN":
-                selectedElement = .CERN
-            case "Swamp":
-                selectedElement = .swamp
-            case "Sewer":
-                selectedElement = .sewer
-            default:
-                selectedElement = .firecave // Default to a known case to avoid runtime errors
-            }
-
-            BattleSceneImage.image = randomImage
-        }
-
+        
         let randomIndex = Int.random(in: 0..<sceneElements.count)
         let randomImage = sceneElements[randomIndex].image
         let selectedElement = sceneElements[randomIndex].element
-
+        
         
         print(selectedElement)
         startCyclingImages(imageArray: sceneElements.map { $0.image }, randomImageIndex: randomIndex)
@@ -104,16 +62,16 @@ class BattleSceneViewController: UIViewController {
             }
         }
     }
-
+    
     
     func shouldStopCycling(currentImageIndex: Int, targetImageIndex: Int) -> Bool {
         // Stop when the current image index is the target image index
         return currentImageIndex == targetImageIndex
     }
-
-
-
-
-
-
-
+    
+    
+    
+    
+    
+    
+}
