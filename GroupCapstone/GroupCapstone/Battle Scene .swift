@@ -35,7 +35,7 @@ class BattleSceneViewController: UIViewController {
         ]
 
         let randomIndex = Int.random(in: 0..<sceneElements.count)
-        let randomImage = sceneElements[randomIndex].image
+//        let randomImage = sceneElements[randomIndex].image
         let selectedElement = sceneElements[randomIndex].element
         
         print(selectedElement)
