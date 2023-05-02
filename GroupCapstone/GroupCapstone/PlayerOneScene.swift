@@ -57,5 +57,13 @@ class PlayerOneScene: UIViewController {
 
         characters = Randomizers.getRandomCharacters()
         statusEffect = Randomizers.getRandomStatusEffect()
+        //        Need to assgin those to the labels
+//        characters[0].name
+//        characters[1].name
+//        characters[2].name
+        //        Need to assgin those to the labels
+//        statusEffect[0].name
+//        statusEffect[1].name
+//        statusEffect[2].name
     }
 }

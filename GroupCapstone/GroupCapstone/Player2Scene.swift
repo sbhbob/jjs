@@ -33,20 +33,14 @@ class PlayerTwoScene: UIViewController {
     
     @IBOutlet weak var P2DebuffCard3: UIImageView!
     
-    
-    
-    @IBOutlet var characterCardsP2: [UIImageView]!
-
-    @IBOutlet var debuffCardsP2: [UIImageView]!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        for imageView in characterCardsP2 + debuffCardsP2  {
-            imageView.isUserInteractionEnabled = true
-            let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(_:)))
-            imageView.addGestureRecognizer(tapGestureRecognizer)
-        }
+//        for imageView in characterCardsP2 + debuffCardsP2  {
+//            imageView.isUserInteractionEnabled = true
+//            let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(_:)))
+//            imageView.addGestureRecognizer(tapGestureRecognizer)
+//        }
         
     }
 
@@ -62,7 +56,14 @@ class PlayerTwoScene: UIViewController {
 
         charactersPlayerTwo = Randomizers.getRandomCharacters()
         statusEffectPlayerTwo = Randomizers.getRandomStatusEffect()
-
+        //        Need to assgin those to the labels
+//        charactersPlayerTwo[0].name
+//        charactersPlayerTwo[1].name
+//        charactersPlayerTwo[2].name
+//        Need to assgin those to the labels
+//        statusEffectPlayerTwo[0].name
+//        statusEffectPlayerTwo[1].name
+//        statusEffectPlayerTwo[2].name
     }
     
     
