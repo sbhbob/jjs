@@ -36,7 +36,10 @@ class BattleSceneViewController: UIViewController {
         let randomIndex = Int.random(in: 0..<sceneElements.count)
         let randomImage = sceneElements[randomIndex].image
         let selectedElement = sceneElements[randomIndex].element
-
+        
+//        Should hold the element to then use in determine winner func
+        GameManager().element = selectedElement
+        
         print(selectedElement)
         startCyclingImages(imageArray: sceneElements.map { $0.image }, randomImageIndex: randomIndex)
     }

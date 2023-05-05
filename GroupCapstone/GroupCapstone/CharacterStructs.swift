@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 // MARK: CHARACTER CLASS
 
 class Character {
