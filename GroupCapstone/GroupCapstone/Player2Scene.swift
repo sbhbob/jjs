@@ -19,7 +19,7 @@ class PlayerTwoScene: UIViewController {
     var statusEffectPlayerTwo: [StatusEffect] = []
     
     
-    @IBOutlet weak var P2CharacterCard1: UIImageView!
+    @IBOutlet weak var p2CharacterCard1: UIImageView!
     
     @IBOutlet weak var P2CharacterCard2: UIImageView!
     
@@ -33,6 +33,7 @@ class PlayerTwoScene: UIViewController {
     
     @IBOutlet weak var P2DebuffCard3: UIImageView!
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -11,6 +11,7 @@
 		0438976A2A03F7B6007BDABA /* AnimationCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043897692A03F7B6007BDABA /* AnimationCode.swift */; };
 		0476A2AA29EDCF2E004BC38B /* DetermineEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0476A2A929EDCF2E004BC38B /* DetermineEnvironment.swift */; };
 		0476A2AC29EEDF43004BC38B /* WinDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0476A2AB29EEDF43004BC38B /* WinDescription.swift */; };
+		23152A8E2A015C0000758C03 /* FrontCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23152A8D2A015C0000758C03 /* FrontCard.xib */; };
 		2368833F29EEFC95002BBFCB /* Battle Scene .swift in Sources */ = {isa = PBXBuildFile; fileRef = 2368833E29EEFC95002BBFCB /* Battle Scene .swift */; };
 		2377391D29F8122400D78161 /* PlayerOneScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2377391C29F8122400D78161 /* PlayerOneScene.swift */; };
 		23FAD27729F8B862003946B7 /* Player2Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FAD27629F8B862003946B7 /* Player2Scene.swift */; };
@@ -32,6 +33,7 @@
 		043897692A03F7B6007BDABA /* AnimationCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationCode.swift; sourceTree = "<group>"; };
 		0476A2A929EDCF2E004BC38B /* DetermineEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetermineEnvironment.swift; sourceTree = "<group>"; };
 		0476A2AB29EEDF43004BC38B /* WinDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinDescription.swift; sourceTree = "<group>"; };
+		23152A8D2A015C0000758C03 /* FrontCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FrontCard.xib; sourceTree = "<group>"; };
 		2368833E29EEFC95002BBFCB /* Battle Scene .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Battle Scene .swift"; sourceTree = "<group>"; };
 		2377391C29F8122400D78161 /* PlayerOneScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerOneScene.swift; sourceTree = "<group>"; };
 		23FAD27629F8B862003946B7 /* Player2Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player2Scene.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				0476A2A929EDCF2E004BC38B /* DetermineEnvironment.swift */,
 				0476A2AB29EEDF43004BC38B /* WinDescription.swift */,
 				EA098E6D29E84EB50041614A /* Main.storyboard */,
+				23152A8D2A015C0000758C03 /* FrontCard.xib */,
 				EA098E6B29E84EB50041614A /* ViewController.swift */,
 				2368833E29EEFC95002BBFCB /* Battle Scene .swift */,
 				0438976729FC160D007BDABA /* GameManager.swift */,
@@ -162,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA098E7429E84EB70041614A /* LaunchScreen.storyboard in Resources */,
+				23152A8E2A015C0000758C03 /* FrontCard.xib in Resources */,
 				EA098E7129E84EB70041614A /* Assets.xcassets in Resources */,
 				EA098E6F29E84EB50041614A /* Main.storyboard in Resources */,
 			);
