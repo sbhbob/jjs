@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0438976829FC160D007BDABA /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0438976729FC160D007BDABA /* GameManager.swift */; };
 		0438976A2A03F7B6007BDABA /* AnimationCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043897692A03F7B6007BDABA /* AnimationCode.swift */; };
+		043897702A054C53007BDABA /* FrontCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0438976F2A054C53007BDABA /* FrontCard.swift */; };
 		0476A2AA29EDCF2E004BC38B /* DetermineEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0476A2A929EDCF2E004BC38B /* DetermineEnvironment.swift */; };
 		0476A2AC29EEDF43004BC38B /* WinDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0476A2AB29EEDF43004BC38B /* WinDescription.swift */; };
 		23152A8E2A015C0000758C03 /* FrontCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23152A8D2A015C0000758C03 /* FrontCard.xib */; };
@@ -31,6 +32,7 @@
 /* Begin PBXFileReference section */
 		0438976729FC160D007BDABA /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
 		043897692A03F7B6007BDABA /* AnimationCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationCode.swift; sourceTree = "<group>"; };
+		0438976F2A054C53007BDABA /* FrontCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontCard.swift; sourceTree = "<group>"; };
 		0476A2A929EDCF2E004BC38B /* DetermineEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetermineEnvironment.swift; sourceTree = "<group>"; };
 		0476A2AB29EEDF43004BC38B /* WinDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinDescription.swift; sourceTree = "<group>"; };
 		23152A8D2A015C0000758C03 /* FrontCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FrontCard.xib; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				0476A2AB29EEDF43004BC38B /* WinDescription.swift */,
 				EA098E6D29E84EB50041614A /* Main.storyboard */,
 				23152A8D2A015C0000758C03 /* FrontCard.xib */,
+				0438976F2A054C53007BDABA /* FrontCard.swift */,
 				EA098E6B29E84EB50041614A /* ViewController.swift */,
 				2368833E29EEFC95002BBFCB /* Battle Scene .swift */,
 				0438976729FC160D007BDABA /* GameManager.swift */,
@@ -191,6 +194,7 @@
 				23FAD27729F8B862003946B7 /* Player2Scene.swift in Sources */,
 				EA098E6829E84EB50041614A /* AppDelegate.swift in Sources */,
 				0476A2AC29EEDF43004BC38B /* WinDescription.swift in Sources */,
+				043897702A054C53007BDABA /* FrontCard.swift in Sources */,
 				EA098E7C29E85AA60041614A /* CharacterStructs.swift in Sources */,
 				EA098E6A29E84EB50041614A /* SceneDelegate.swift in Sources */,
 			);
