@@ -19,7 +19,7 @@ class PlayerTwoScene: UIViewController {
     var statusEffectPlayerTwo: [StatusEffect] = []
     
     
-    @IBOutlet weak var P2CharacterCard1: UIImageView!
+    @IBOutlet weak var p2CharacterCard1: UIImageView!
     
     @IBOutlet weak var P2CharacterCard2: UIImageView!
     
@@ -35,18 +35,16 @@ class PlayerTwoScene: UIViewController {
     
     
     
-    @IBOutlet var characterCardsP2: [UIImageView]!
 
-    @IBOutlet var debuffCardsP2: [UIImageView]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        for imageView in characterCardsP2 + debuffCardsP2  {
-            imageView.isUserInteractionEnabled = true
-            let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(_:)))
-            imageView.addGestureRecognizer(tapGestureRecognizer)
-        }
+//        for imageView in characterCardsP2 + debuffCardsP2  {
+//            imageView.isUserInteractionEnabled = true
+//            let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(_:)))
+//            imageView.addGestureRecognizer(tapGestureRecognizer)
+//        }
         
     }
 
