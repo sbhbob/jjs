@@ -31,14 +31,12 @@ class BattleSceneViewController: UIViewController {
             SceneElement(image: UIImage(named: "YourMomsHouse")!, element: .yourMomsHouse),
             SceneElement(image: UIImage(named: "CERN")!, element: .CERN),
             SceneElement(image: UIImage(named: "Swamp")!, element: .swamp),
-            SceneElement(image: UIImage(named: "Sewer")!, element: .sewer)
-        ]
+            SceneElement(image: UIImage(named: "Sewer")!, element: .sewer)]
         
         let randomIndex = Int.random(in: 0..<sceneElements.count)
         let randomImage = sceneElements[randomIndex].image
         let selectedElement = sceneElements[randomIndex].element
-        
-        
+
         print(selectedElement)
         startCyclingImages(imageArray: sceneElements.map { $0.image }, randomImageIndex: randomIndex)
     }
@@ -62,16 +60,11 @@ class BattleSceneViewController: UIViewController {
             }
         }
     }
-    
+
     
     func shouldStopCycling(currentImageIndex: Int, targetImageIndex: Int) -> Bool {
         // Stop when the current image index is the target image index
         return currentImageIndex == targetImageIndex
-    }
-    
-    
-    
-    
-    
-    
+    }  
 }
+

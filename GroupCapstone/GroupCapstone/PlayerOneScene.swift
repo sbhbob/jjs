@@ -34,6 +34,7 @@ class PlayerOneScene: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+
 //        print(debuffCardsP1)
         
 //        for imageView in characterCardsP1 + debuffCardsP1  {
@@ -41,6 +42,7 @@ class PlayerOneScene: UIViewController {
 //            let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(_:)))
 //            imageView.addGestureRecognizer(tapGestureRecognizer)
 //        }
+
         
     }
 
@@ -52,7 +54,6 @@ class PlayerOneScene: UIViewController {
 
     
     @IBAction func randomCharacterAndStatusEffectTapped(_ sender: Any) {
-
         characters = Randomizers.getRandomCharacters()
         statusEffect = Randomizers.getRandomStatusEffect()
     }
