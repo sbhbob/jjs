@@ -552,10 +552,10 @@
             </objects>
             <point key="canvasLocation" x="3979.3893129770991" y="-27.464788732394368"/>
         </scene>
-        <!--View Controller-->
+        <!--Display Winner View Controller-->
         <scene sceneID="9hY-kB-LEZ">
             <objects>
-                <viewController id="laj-vP-obe" sceneMemberID="viewController">
+                <viewController id="laj-vP-obe" customClass="DisplayWinnerViewController" customModule="GroupCapstone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GMC-RQ-Ohy">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -657,7 +657,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="geF-si-Sef"/>
         <segue reference="brU-Ll-27w"/>
     </inferredMetricsTieBreakers>
     <resources>
