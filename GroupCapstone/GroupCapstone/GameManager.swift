@@ -8,19 +8,9 @@
 import Foundation
 class GameManager {
     static let shared = GameManager()
-        
-        var player1: (character: Character, statusEffect: StatusEffect)?
-    //    MARK: To call it for player one
-//    let selectedCharacter = // get the selected character from the user input
-//            let selectedEffect = // get the selected effect from the user input
-            
-//            GameManager.shared.player1 = (selectedCharacter, selectedEffect)
     
-        var player2: (character: Character, statusEffect: StatusEffect)?
-//    MARK: To call it for player two
-//    let selectedCharacter = // get the selected character from the user input
-//            let selectedEffect = // get the selected effect from the user input
-//
-//            GameManager.shared.player2 = (selectedCharacter, selectedEffect)
-    var element: Element?
+    var player1: Character?
+    var player2: Character?
+
+    var battleEnvironment: Element?    
 }
