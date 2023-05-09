@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cYG-mG-aYl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cYG-mG-aYl">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,7 +14,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GroupCapstone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screenshot 2023-04-18 at 8.47.10 AM" translatesAutoresizingMaskIntoConstraints="NO" id="bYw-7Z-y6J">
@@ -29,7 +30,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="126" translatesAutoresizingMaskIntoConstraints="NO" id="Cr4-57-m2O">
-                                <rect key="frame" x="0.0" y="727.33333333333337" width="393" height="47.666666666666629"/>
+                                <rect key="frame" x="0.0" y="786.33333333333337" width="393" height="47.666666666666629"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sjZ-hK-u9d">
                                         <rect key="frame" x="0.0" y="0.0" width="133.66666666666666" height="47.666666666666664"/>
@@ -75,21 +76,21 @@
             <objects>
                 <viewController id="Ucc-5E-g7d" customClass="BattleSceneViewController" customModule="GroupCapstone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GNc-3L-azZ">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screenshot 2023-04-18 at 8.47.10 AM" translatesAutoresizingMaskIntoConstraints="NO" id="Ooz-Gz-mqW">
-                                <rect key="frame" x="0.0" y="0.0" width="899" height="783"/>
+                                <rect key="frame" x="0.0" y="0.0" width="899" height="842"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="UIN-xR-loE">
-                                <rect key="frame" x="0.0" y="67" width="415" height="708"/>
+                                <rect key="frame" x="0.0" y="8" width="415" height="826"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="38" id="Omf-CP-iKg">
-                                        <rect key="frame" x="0.0" y="0.0" width="415" height="610"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="415" height="728"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="B7u-3Z-p89">
-                                                <rect key="frame" x="0.0" y="0.0" width="415" height="610"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="415" height="728"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Armies Display (3)" translatesAutoresizingMaskIntoConstraints="NO" id="iXh-4h-67X">
                                                         <rect key="frame" x="0.0" y="0.0" width="415" height="100"/>
@@ -98,7 +99,7 @@
                                                         </constraints>
                                                     </imageView>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="10" translatesAutoresizingMaskIntoConstraints="NO" id="2eJ-DM-nw4">
-                                                        <rect key="frame" x="0.0" y="101" width="415" height="509"/>
+                                                        <rect key="frame" x="0.0" y="101" width="415" height="627"/>
                                                     </imageView>
                                                 </subviews>
                                                 <constraints>
@@ -109,7 +110,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="wUj-9f-hVo">
-                                        <rect key="frame" x="75.666666666666686" y="618" width="264" height="90"/>
+                                        <rect key="frame" x="75.666666666666686" y="736" width="264" height="90"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ndG-rR-EzP">
                                                 <rect key="frame" x="0.0" y="0.0" width="264" height="47.666666666666664"/>
@@ -164,7 +165,7 @@
             <objects>
                 <viewController id="hwC-1C-pph" customClass="PlayerOneScene" customModule="GroupCapstone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mwk-z9-3vv">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screenshot 2023-04-18 at 8.47.10 AM" translatesAutoresizingMaskIntoConstraints="NO" id="tnz-YN-l9F">
@@ -172,7 +173,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="49" translatesAutoresizingMaskIntoConstraints="NO" id="SuZ-YC-Kjc">
-                                <rect key="frame" x="8" y="67" width="377" height="645"/>
+                                <rect key="frame" x="8" y="8" width="377" height="645"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P4I-5T-1FJ">
                                         <rect key="frame" x="95" y="0.0" width="187" height="60"/>
@@ -272,7 +273,7 @@
                                                             <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                         <connections>
-                                                            <action selector="randomCharacterAndStatusEffectTapped:" destination="hwC-1C-pph" eventType="touchUpInside" id="i7u-yC-jNb"/>
+                                                            <action selector="flipButtonTapped:" destination="hwC-1C-pph" eventType="touchUpInside" id="3wA-oZ-4Pg"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Koh-Yv-qQT">
@@ -300,12 +301,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="39A-ie-WMw"/>
                     <connections>
-                        <outlet property="P1CharacterCard1" destination="YbI-IJ-zwn" id="PeJ-aT-BWC"/>
-                        <outlet property="P1CharacterCard2" destination="HAK-O9-H3p" id="kTv-ei-eDT"/>
-                        <outlet property="P1CharacterCard3" destination="hmu-Uu-0nk" id="Voj-KZ-sPo"/>
-                        <outlet property="P1DebuffCard1" destination="QfT-ye-1gl" id="SzL-yV-qX4"/>
-                        <outlet property="P1DebuffCard2" destination="xTR-86-fOh" id="YG2-IY-Khr"/>
-                        <outlet property="P1DebuffCard3" destination="qJo-Qf-9aO" id="LYI-N1-WrB"/>
+                        <outlet property="flipButton" destination="sas-T7-XaY" id="Um2-fk-vzH"/>
+                        <outlet property="p1CharacterOne" destination="YbI-IJ-zwn" id="PeJ-aT-BWC"/>
+                        <outlet property="p1CharacterThree" destination="hmu-Uu-0nk" id="Voj-KZ-sPo"/>
+                        <outlet property="p1CharacterTwo" destination="HAK-O9-H3p" id="kTv-ei-eDT"/>
+                        <outlet property="p1StatusEffect" destination="QfT-ye-1gl" id="SzL-yV-qX4"/>
+                        <outlet property="p1StatusEffectThree" destination="qJo-Qf-9aO" id="LYI-N1-WrB"/>
+                        <outlet property="p1StatusEffectTwo" destination="xTR-86-fOh" id="YG2-IY-Khr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SvX-f0-IB3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -317,7 +319,7 @@
             <objects>
                 <viewController id="YvC-fs-CTw" sceneMemberID="viewController">
                     <view key="view" tag="5" contentMode="scaleToFill" id="AM6-j0-GxB">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screenshot 2023-04-18 at 8.47.10 AM" translatesAutoresizingMaskIntoConstraints="NO" id="EAF-H1-TJx">
@@ -403,7 +405,7 @@
             <objects>
                 <viewController id="1WJ-2h-zEa" customClass="PlayerTwoScene" customModule="GroupCapstone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DmH-aC-K5v">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screenshot 2023-04-18 at 8.47.10 AM" translatesAutoresizingMaskIntoConstraints="NO" id="56I-xH-Z3P">
@@ -411,7 +413,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="49" translatesAutoresizingMaskIntoConstraints="NO" id="nkI-2R-NZB">
-                                <rect key="frame" x="8" y="67" width="377" height="526"/>
+                                <rect key="frame" x="8" y="8" width="377" height="526"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecD-5J-THo">
                                         <rect key="frame" x="92.000000000000014" y="0.0" width="193.33333333333337" height="60"/>
@@ -500,7 +502,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="358-dk-PoJ">
-                                <rect key="frame" x="0.0" y="682" width="393" height="93"/>
+                                <rect key="frame" x="0.0" y="741" width="393" height="93"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u7W-7E-TV8">
                                         <rect key="frame" x="130.66666666666669" y="0.0" width="131.66666666666669" height="47.666666666666664"/>
@@ -510,7 +512,7 @@
                                             <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="playerTwoRandomCharAndStatusEffect:" destination="1WJ-2h-zEa" eventType="touchUpInside" id="3gz-mj-Nho"/>
+                                            <action selector="p2FlipButtonTapped:" destination="1WJ-2h-zEa" eventType="touchUpInside" id="O4f-ZR-1u3"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lo2-ZW-SFq">
@@ -537,12 +539,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="LgO-Jx-D0Q"/>
                     <connections>
-                        <outlet property="P2CharacterCard2" destination="8GL-bv-RF3" id="dvO-zW-vGP"/>
-                        <outlet property="P2CharacterCard3" destination="Wgw-hW-fgR" id="d8Z-Cl-PXu"/>
-                        <outlet property="P2DebuffCard1" destination="J0g-k8-Ia5" id="coM-Mk-W63"/>
-                        <outlet property="P2DebuffCard2" destination="FLQ-WI-vua" id="MCc-bh-nNd"/>
-                        <outlet property="P2DebuffCard3" destination="htv-hN-BIB" id="zEd-xW-kL3"/>
                         <outlet property="p2CharacterCard1" destination="3lg-2Q-QAw" id="b1v-2R-RsN"/>
+                        <outlet property="p2CharacterCard2" destination="8GL-bv-RF3" id="dvO-zW-vGP"/>
+                        <outlet property="p2CharacterCard3" destination="Wgw-hW-fgR" id="d8Z-Cl-PXu"/>
+                        <outlet property="p2DebuffCard1" destination="J0g-k8-Ia5" id="coM-Mk-W63"/>
+                        <outlet property="p2DebuffCard2" destination="FLQ-WI-vua" id="MCc-bh-nNd"/>
+                        <outlet property="p2DebuffCard3" destination="htv-hN-BIB" id="zEd-xW-kL3"/>
+                        <outlet property="p2FlipButton" destination="u7W-7E-TV8" id="oXa-XV-ZkZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GB5-YG-bh7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -554,7 +557,7 @@
             <objects>
                 <viewController id="laj-vP-obe" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GMC-RQ-Ohy">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screenshot 2023-04-18 at 8.47.10 AM" translatesAutoresizingMaskIntoConstraints="NO" id="tBQ-Z3-KTo">
@@ -562,7 +565,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bus-51-Hhc">
-                                <rect key="frame" x="78.666666666666686" y="327.66666666666669" width="236" height="128"/>
+                                <rect key="frame" x="78.666666666666686" y="357" width="236" height="128"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Beige Spiritual Astrological Tarot Card" translatesAutoresizingMaskIntoConstraints="NO" id="Fuc-vK-iMH">
                                         <rect key="frame" x="0.0" y="0.0" width="114" height="128"/>
@@ -581,7 +584,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="v4I-tY-dB4">
-                                <rect key="frame" x="24" y="73.999999999999986" width="305" height="171.66666666666663"/>
+                                <rect key="frame" x="24" y="15" width="305" height="171.66666666666666"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Armies Display (2)" translatesAutoresizingMaskIntoConstraints="NO" id="QUW-DK-Hct">
                                         <rect key="frame" x="0.0" y="0.0" width="305" height="126"/>
@@ -654,7 +657,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="YC5-VS-4fa"/>
+        <segue reference="geF-si-Sef"/>
         <segue reference="brU-Ll-27w"/>
     </inferredMetricsTieBreakers>
     <resources>

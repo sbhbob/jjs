@@ -33,12 +33,23 @@ class BattleSceneViewController: UIViewController {
             SceneElement(image: UIImage(named: "Swamp")!, element: .swamp),
             SceneElement(image: UIImage(named: "Sewer")!, element: .sewer)]
         
-        let randomIndex = Int.random(in: 0..<sceneElements.count)
-        let randomImage = sceneElements[randomIndex].image
-        let selectedElement = sceneElements[randomIndex].element
-
-        print(selectedElement)
-        startCyclingImages(imageArray: sceneElements.map { $0.image }, randomImageIndex: randomIndex)
+        if GameManager.shared.battleEnvironment == nil {
+            
+            let randomIndex = Int.random(in: 0..<sceneElements.count)
+            let randomImage = sceneElements[randomIndex].image
+            let selectedElement = sceneElements[randomIndex].element
+            
+            //        Should hold the element to then use in determine winner func
+            GameManager.shared.battleEnvironment = selectedElement
+            
+            print(selectedElement)
+            startCyclingImages(imageArray: sceneElements.map { $0.image }, randomImageIndex: randomIndex)
+        }
+        
+        // If there's already a battle environment, do nothing
+        else {
+            return
+        }
     }
     
     func startCyclingImages(imageArray: [UIImage], randomImageIndex: Int) {

@@ -11,19 +11,16 @@ class DisplayWinnerViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        // ???label.text = winner.name or sum shit
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    let player1 = GameManager.shared.player1
+    let player2 = GameManager.shared.player2
+    let environment = GameManager.shared.battleEnvironment
+    
+    
+//    let winner = GameManager.shared.determineWinner(player1: player1, player2: player2, environment: environment)
+    
+    // have a label be l
 }
