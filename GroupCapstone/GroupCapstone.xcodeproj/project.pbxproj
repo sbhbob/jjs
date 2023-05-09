@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0438976829FC160D007BDABA /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0438976729FC160D007BDABA /* GameManager.swift */; };
-		0438976A2A03F7B6007BDABA /* AnimationCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043897692A03F7B6007BDABA /* AnimationCode.swift */; };
 		043897702A054C53007BDABA /* FrontCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0438976F2A054C53007BDABA /* FrontCard.swift */; };
 		0476A2AA29EDCF2E004BC38B /* DetermineEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0476A2A929EDCF2E004BC38B /* DetermineEnvironment.swift */; };
 		0476A2AC29EEDF43004BC38B /* WinDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0476A2AB29EEDF43004BC38B /* WinDescription.swift */; };
@@ -31,7 +30,6 @@
 
 /* Begin PBXFileReference section */
 		0438976729FC160D007BDABA /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
-		043897692A03F7B6007BDABA /* AnimationCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationCode.swift; sourceTree = "<group>"; };
 		0438976F2A054C53007BDABA /* FrontCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontCard.swift; sourceTree = "<group>"; };
 		0476A2A929EDCF2E004BC38B /* DetermineEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetermineEnvironment.swift; sourceTree = "<group>"; };
 		0476A2AB29EEDF43004BC38B /* WinDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinDescription.swift; sourceTree = "<group>"; };
@@ -100,7 +98,6 @@
 				0438976729FC160D007BDABA /* GameManager.swift */,
 				2377391C29F8122400D78161 /* PlayerOneScene.swift */,
 				23FAD27629F8B862003946B7 /* Player2Scene.swift */,
-				043897692A03F7B6007BDABA /* AnimationCode.swift */,
 				EAEF502F29FB3C2300E4C34A /* DisplayWinnerViewController.swift */,
 				EA098E7029E84EB70041614A /* Assets.xcassets */,
 				EA098E7229E84EB70041614A /* LaunchScreen.storyboard */,
@@ -184,7 +181,6 @@
 				EA063B5429ED9E880077420C /* DetermineWinner.swift in Sources */,
 				EA098E7E29E88F780041614A /* StatusEffectStructs.swift in Sources */,
 				0476A2AA29EDCF2E004BC38B /* DetermineEnvironment.swift in Sources */,
-				0438976A2A03F7B6007BDABA /* AnimationCode.swift in Sources */,
 				0438976829FC160D007BDABA /* GameManager.swift in Sources */,
 				EAEF503229FB4CB100E4C34A /* Randomizers.swift in Sources */,
 				2368833F29EEFC95002BBFCB /* Battle Scene .swift in Sources */,

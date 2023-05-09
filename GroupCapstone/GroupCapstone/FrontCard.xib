@@ -19,9 +19,9 @@
                     <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qeb-2b-MOR">
-                    <rect key="frame" x="146.66666666666666" y="351" width="100" height="150"/>
+                    <rect key="frame" x="141.66666666666666" y="351" width="110" height="150"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="100" id="bol-JB-bco"/>
+                        <constraint firstAttribute="width" constant="110" id="bol-JB-bco"/>
                         <constraint firstAttribute="height" constant="150" id="qeV-ak-J8c"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="14"/>

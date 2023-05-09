@@ -79,9 +79,6 @@ class PlayerTwoScene: UIViewController {
         
 
         // Handle image tap here
-    
-
-        let charactersArray = Randomizers.getRandomCharacters()
         
         let characterOne = charactersArray[0].name
         let characterTwo = charactersArray[1].name
