@@ -584,7 +584,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="v4I-tY-dB4">
-                                <rect key="frame" x="24" y="117.99999999999999" width="305" height="171.66666666666663"/>
+                                <rect key="frame" x="24" y="118" width="305" height="226"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Armies Display (2)" translatesAutoresizingMaskIntoConstraints="NO" id="QUW-DK-Hct">
                                         <rect key="frame" x="0.0" y="0.0" width="305" height="126"/>
@@ -593,9 +593,13 @@
                                             <constraint firstAttribute="width" constant="305" id="oGj-cS-JnE"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="??????" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jph-KQ-aGl">
-                                        <rect key="frame" x="95.666666666666686" y="126.00000000000001" width="114" height="45.666666666666671"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="??????" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jph-KQ-aGl">
+                                        <rect key="frame" x="77.666666666666686" y="126" width="150" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="jEf-RS-nKn"/>
+                                            <constraint firstAttribute="height" constant="100" id="slM-Og-3bP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -631,6 +635,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hJk-XJ-PRx"/>
+                    <connections>
+                        <outlet property="playerWinnerLabel" destination="jph-KQ-aGl" id="tyF-BS-fNR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Snw-3T-V2Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
