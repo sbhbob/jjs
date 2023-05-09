@@ -20,7 +20,6 @@ class DisplayWinnerViewController: UIViewController {
     let environment = GameManager.shared.battleEnvironment
     
     
-//    let winner = GameManager.shared.determineWinner(player1: player1, player2: player2, environment: environment)
     
     // have a label be l
     @IBAction func dismissButtonTapped(_ sender: UIButton) {
