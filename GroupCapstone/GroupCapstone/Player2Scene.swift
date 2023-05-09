@@ -9,14 +9,20 @@
 import Foundation
 import UIKit
 
- 
+
 class PlayerTwoScene: UIViewController {
     var cards: String = ""
     var imageView = UIImage()
-
+    
     
     var charactersPlayerTwo: [Character] = []
     var statusEffectPlayerTwo: [StatusEffect] = []
+    
+    let charactersArray = Randomizers.getRandomCharacters()
+    let debuffArray = Randomizers.getRandomStatusEffect()
+    
+    private var characterTapped = false
+    private var statusEffectTapped = false
     
     
     @IBOutlet weak var p2FlipButton: UIButton!
@@ -35,7 +41,7 @@ class PlayerTwoScene: UIViewController {
     
     @IBOutlet weak var p2DebuffCard3: UIImageView!
     
-
+    
     private let frontImageView: UIImageView! = UIImageView(image: UIImage(named: "front"))
     private let frontImageView2: UIImageView! = UIImageView(image: UIImage(named: "front"))
     private let frontImageView3: UIImageView! = UIImageView(image: UIImage(named: "front"))
@@ -51,9 +57,9 @@ class PlayerTwoScene: UIViewController {
     private var backViewStatus: UIView = UIView()
     private var backViewStatus2: UIView = UIView()
     private var backViewStatus3: UIView = UIView()
-
+    
     private var showingBack = false
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let allViewsInXibArray = Bundle.main.loadNibNamed("FrontCard", owner: self, options: nil)
@@ -82,7 +88,7 @@ class PlayerTwoScene: UIViewController {
         labelView3.label.text = "\(characterThree)"
         
         let debuffArray = Randomizers.getRandomStatusEffect()
-    
+        
         let debuffOne = debuffArray[0].name
         let debuffTwo = debuffArray[1].name
         let debuffThree = debuffArray[2].name
@@ -90,7 +96,7 @@ class PlayerTwoScene: UIViewController {
         labelViewStatus.label.text = debuffOne
         labelViewStatus2.label.text = debuffTwo
         labelViewStatus3.label.text = debuffThree
-   
+        
         //Set wanted position and size (frame)
         labelView.frame = p2CharacterCard1.bounds
         labelView2.frame = p2CharacterCard2.bounds
@@ -145,6 +151,31 @@ class PlayerTwoScene: UIViewController {
         p2DebuffCard3.addSubview(frontImageViewStatus3)
         frontImageViewStatus3.translatesAutoresizingMaskIntoConstraints = true
         frontImageViewStatus3.frame = p2DebuffCard3.bounds
+        
+        // tap gesture recognizers
+        let tapGesture1 = UITapGestureRecognizer(target: self, action: #selector(characterCardTapped(_:)))
+        p2CharacterCard1.addGestureRecognizer(tapGesture1)
+        p2CharacterCard1.isUserInteractionEnabled = true
+        
+        let tapGesture2 = UITapGestureRecognizer(target: self, action: #selector(characterCardTapped(_:)))
+        p2CharacterCard2.addGestureRecognizer(tapGesture2)
+        p2CharacterCard2.isUserInteractionEnabled = true
+        
+        let tapGesture3 = UITapGestureRecognizer(target: self, action: #selector(characterCardTapped(_:)))
+        p2CharacterCard3.addGestureRecognizer(tapGesture3)
+        p2CharacterCard3.isUserInteractionEnabled = true
+        
+        let tapGestureStatusEffect1 = UITapGestureRecognizer(target: self, action: #selector(statusEffectCardTapped(_:)))
+        p2DebuffCard1.addGestureRecognizer(tapGestureStatusEffect1)
+        p2DebuffCard1.isUserInteractionEnabled = true
+        
+        let tapGestureStatusEffect2 = UITapGestureRecognizer(target: self, action: #selector(statusEffectCardTapped(_:)))
+        p2DebuffCard2.addGestureRecognizer(tapGestureStatusEffect2)
+        p2DebuffCard2.isUserInteractionEnabled = true
+        
+        let tapGestureStatusEffect3 = UITapGestureRecognizer(target: self, action: #selector(statusEffectCardTapped(_:)))
+        p2DebuffCard3.addGestureRecognizer(tapGestureStatusEffect3)
+        p2DebuffCard3.isUserInteractionEnabled = true
     }
     
     func flip() {
@@ -189,36 +220,120 @@ class PlayerTwoScene: UIViewController {
         
         showingBack = !showingBack
     }
-
+    
     @IBAction func p2FlipButtonTapped(_ sender: Any) {
         flip()
         p2FlipButton.isHidden = true
     }
-    @objc func imageTapped(_ sender: UITapGestureRecognizer) {
-        guard let imageView = sender.view as? UIImageView else { return }
+    
+    @objc func characterCardTapped(_ sender: UITapGestureRecognizer) {
+        guard let selectedImageView = sender.view as? UIImageView else { return }
+        // Dismiss other character cards and animate the dismissal
+        if characterTapped == false {
+            let otherCards: [UIImageView] = {
+                switch selectedImageView {
+                case p2CharacterCard1:
+                    return [p2CharacterCard2, p2CharacterCard3]
+                case p2CharacterCard2:
+                    return [p2CharacterCard1, p2CharacterCard3]
+                case p2CharacterCard3:
+                    return [p2CharacterCard1, p2CharacterCard2]
+                default:
+                    return []
+                }
+            }()
+            
+            for card in otherCards {
+                UIView.animate(withDuration: 0.3, animations: {
+                    card.alpha = 0.0
+                    card.transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
+                }) { _ in
+                    card.removeFromSuperview()
+                }
+            }
+            
+            // Set the selected character value to GameManager.shared.player2
+            let selectedCharacterIndex: Int = {
+                switch selectedImageView {
+                case p2CharacterCard1:
+                    return 0
+                case p2CharacterCard2:
+                    return 1
+                case p2CharacterCard3:
+                    return 2
+                default:
+                    return -1
+                }
+            }()
+            
+            if selectedCharacterIndex >= 0 {
+                print(charactersArray)
+                print(selectedCharacterIndex)
+                let selectedCharacter = charactersArray[selectedCharacterIndex]
+                GameManager.shared.player2 = selectedCharacter
+            }
+            characterTapped.toggle()
+        }
+        else {
+            return
+        }
+    }
+    
+    @objc func statusEffectCardTapped(_ sender: UITapGestureRecognizer) {
+        guard let selectedImageView = sender.view as? UIImageView else { return }
         
-        // Handle image tap here
-    }
-
-    
-    
-    @IBAction func playerTwoRandomCharAndStatusEffect(_ sender: Any) {
-
-        charactersPlayerTwo = Randomizers.getRandomCharacters()
-        statusEffectPlayerTwo = Randomizers.getRandomStatusEffect()
-        //        Need to assgin those to the labels
-//        charactersPlayerTwo[0].name
-//        charactersPlayerTwo[1].name
-//        charactersPlayerTwo[2].name
-//        Need to assgin those to the labels
-//        statusEffectPlayerTwo[0].name
-//        statusEffectPlayerTwo[1].name
-//        statusEffectPlayerTwo[2].name
-    }
-    
-    
-    
-    
-    
-    
+        if GameManager.shared.player2 == nil {
+            // Show an alert asking the user to select a character first
+            let alert = UIAlertController(title: "Select a Character", message: "Please select a character first.", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            present(alert, animated: true, completion: nil)
+            return
+        }
+        
+        if statusEffectTapped == false {
+            let otherCards: [UIImageView] = {
+                switch selectedImageView {
+                case p2DebuffCard1:
+                    return [p2DebuffCard2, p2DebuffCard3]
+                case p2DebuffCard2:
+                    return [p2DebuffCard1, p2DebuffCard3]
+                case p2DebuffCard3:
+                    return [p2DebuffCard1, p2DebuffCard2]
+                default:
+                    return []
+                }
+            }()
+            
+            for card in otherCards {
+                UIView.animate(withDuration: 0.3, animations: {
+                    card.alpha = 0.0
+                    card.transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
+                }) { _ in
+                    card.removeFromSuperview()
+                }
+            }
+            
+            // Set the selected status effect value to GameManager.shared.player2.statusEffect
+            let selectedStatusEffectIndex: Int = {
+                switch selectedImageView {
+                case p2DebuffCard1:
+                    return 0
+                case p2DebuffCard2:
+                    return 1
+                case p2DebuffCard3:
+                    return 2
+                default:
+                    return -1
+                }
+            }()
+            
+            if selectedStatusEffectIndex >= 0 {
+                let selectedStatusEffect = debuffArray[selectedStatusEffectIndex]
+                GameManager.shared.player2!.statusEffect = selectedStatusEffect
+            }
+            statusEffectTapped.toggle()
+        } else {
+            return
+        }
+    }  
 }
