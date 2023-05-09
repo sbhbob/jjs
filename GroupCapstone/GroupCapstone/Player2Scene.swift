@@ -77,7 +77,6 @@ class PlayerTwoScene: UIViewController {
         let labelViewStatus2 = allViewsInXibArrayStatus2?.first as! FrontCard
         let labelViewStatus3 = allViewsInXibArrayStatus3?.first as! FrontCard
         
-        let charactersArray = Randomizers.getRandomCharacters()
         
         let characterOne = charactersArray[0].name
         let characterTwo = charactersArray[1].name
