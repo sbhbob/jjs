@@ -80,7 +80,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screenshot 2023-04-18 at 8.47.10 AM" translatesAutoresizingMaskIntoConstraints="NO" id="Ooz-Gz-mqW">
+
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="UIN-xR-loE">
                                 <rect key="frame" x="0.0" y="111" width="415" height="826"/>
@@ -314,7 +316,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SvX-f0-IB3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+
             <point key="canvasLocation" x="3117" y="-19"/>
+
         </scene>
         <!--View Controller-->
         <scene sceneID="YyP-Px-a6e">
@@ -639,6 +643,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="hJk-XJ-PRx"/>
                     <connections>
+
                         <outlet property="howItHappenedLabel" destination="Kfp-Tq-Ics" id="xBI-lx-AKF"/>
                         <outlet property="playerWinnerLabel" destination="jph-KQ-aGl" id="tyF-BS-fNR"/>
                     </connections>
