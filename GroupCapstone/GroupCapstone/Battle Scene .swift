@@ -16,6 +16,25 @@ struct SceneElement {
 class BattleSceneViewController: UIViewController {
     @IBOutlet weak var BattleSceneImage: UIImageView!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // Hide the back button, because we have a bug rn that wont let us hit the back button cuz if we do the function to determine winner wont work.
+        navigationItem.hidesBackButton = true
+    }
+    
+    
+    @IBAction func alertToPickSceneElement(_ sender: Any) {
+        if GameManager.shared.battleEnvironment == nil {
+            // Show an alert asking the user to select a character first
+            let alert = UIAlertController(title: "Smack That Button!", message: "Please smack that Pick Scene of Battle button! If you don't, than what's the point?", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            present(alert, animated: true, completion: nil)
+            return
+        }
+    }
+    
+    
     @IBAction func randomElement(_ sender: UIButton) {
         let sceneElements: [SceneElement] = [
             SceneElement(image: UIImage(named: "FireCave")!, element: .firecave),
@@ -71,7 +90,7 @@ class BattleSceneViewController: UIViewController {
             }
         }
     }
-
+    
     
     func shouldStopCycling(currentImageIndex: Int, targetImageIndex: Int) -> Bool {
         // Stop when the current image index is the target image index

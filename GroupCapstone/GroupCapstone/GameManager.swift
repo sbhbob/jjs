@@ -23,7 +23,7 @@ class GameManager {
     private func determineWinner(player1: Character, player2: Character, environment: Element) -> Character? {
         guard player1.statusEffect != nil else { return nil }
         guard player2.statusEffect != nil else { return nil }
-    
+
         var player1PL = player1.powerLevel
         player1PL += player1.statusEffect!.powerLevel
         if environment == player1.element {
