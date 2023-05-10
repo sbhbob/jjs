@@ -62,6 +62,9 @@ class PlayerTwoScene: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Hide the back button, because we have a bug rn that wont let us hit the back button cuz if we do the function to determine winner wont work.
+        navigationItem.hidesBackButton = true
+        
         let allViewsInXibArray = Bundle.main.loadNibNamed("FrontCard", owner: self, options: nil)
         let allViewsInXibArray2 = Bundle.main.loadNibNamed("FrontCard", owner: self, options: nil)
         let allViewsInXibArray3 = Bundle.main.loadNibNamed("FrontCard", owner: self, options: nil)
@@ -77,7 +80,7 @@ class PlayerTwoScene: UIViewController {
         let labelViewStatus2 = allViewsInXibArrayStatus2?.first as! FrontCard
         let labelViewStatus3 = allViewsInXibArrayStatus3?.first as! FrontCard
         
-
+        
         // Handle image tap here
         
         let characterOne = charactersArray[0].name
@@ -177,7 +180,7 @@ class PlayerTwoScene: UIViewController {
         let tapGestureStatusEffect3 = UITapGestureRecognizer(target: self, action: #selector(statusEffectCardTapped(_:)))
         p2DebuffCard3.addGestureRecognizer(tapGestureStatusEffect3)
         p2DebuffCard3.isUserInteractionEnabled = true
-
+        
     }
     
     func flip() {
@@ -226,6 +229,24 @@ class PlayerTwoScene: UIViewController {
     @IBAction func p2FlipButtonTapped(_ sender: Any) {
         flip()
         p2FlipButton.isHidden = true
+    }
+    
+    @IBAction func characterIsNotNilP2(_ sender: Any) {
+        if GameManager.shared.player2 == nil {
+            // Show an alert asking the user to select a character first so they can't skip this screen
+            let alert = UIAlertController(title: "Select a Character", message: "Please select a character first.", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            present(alert, animated: true, completion: nil)
+            return
+        }
+        
+       if GameManager.shared.player2!.statusEffect == nil {
+            // Show an alert asking the user to select a character first so they can't skip this screen
+            let alert = UIAlertController(title: "Select a Status Effect", message: "Please select a status effect.", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            present(alert, animated: true, completion: nil)
+            return
+        }
     }
     
     @objc func characterCardTapped(_ sender: UITapGestureRecognizer) {

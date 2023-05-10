@@ -8,16 +8,16 @@
 import Foundation
 import UIKit
 
- 
+
 class PlayerOneScene: UIViewController {
     var cards: String = ""
     var imageView = UIImage()
-
+    
     var characters: [Character] = []
     var statusEffect: [StatusEffect] = []
-
+    
     //PLAYER 1
-
+    
     @IBOutlet weak var flipButton: UIButton!
     
     @IBOutlet weak var p1CharacterOne: UIImageView!
@@ -51,13 +51,16 @@ class PlayerOneScene: UIViewController {
     private var showingBack = false
     private var characterTapped = false
     private var statusEffectTapped = false
-
+    
     
     let charactersArray = Randomizers.getRandomCharacters()
     let debuffArray = Randomizers.getRandomStatusEffect()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Hide the back button, because we have a bug rn that wont let us hit the back button cuz if we do the function to determine winner wont work.
+        navigationItem.hidesBackButton = true
+        
         //Get all views in the xib
         let allViewsInXibArray = Bundle.main.loadNibNamed("FrontCard", owner: self, options: nil)
         let allViewsInXibArray2 = Bundle.main.loadNibNamed("FrontCard", owner: self, options: nil)
@@ -82,7 +85,7 @@ class PlayerOneScene: UIViewController {
         labelView.label.text = "\(characterOne.name)"
         labelView2.label.text = "\(characterTwo.name)"
         labelView3.label.text = "\(characterThree.name)"
-            
+        
         let debuffOne = debuffArray[0]
         let debuffTwo = debuffArray[1]
         let debuffThree = debuffArray[2]
@@ -90,7 +93,7 @@ class PlayerOneScene: UIViewController {
         labelViewStatus.label.text = debuffOne.name
         labelViewStatus2.label.text = debuffTwo.name
         labelViewStatus3.label.text = debuffThree.name
-   
+        
         //Set wanted position and size (frame)
         labelView.frame = p1CharacterOne.bounds
         labelView2.frame = p1CharacterTwo.bounds
@@ -150,11 +153,11 @@ class PlayerOneScene: UIViewController {
         let tapGesture1 = UITapGestureRecognizer(target: self, action: #selector(characterCardTapped(_:)))
         p1CharacterOne.addGestureRecognizer(tapGesture1)
         p1CharacterOne.isUserInteractionEnabled = true
-
+        
         let tapGesture2 = UITapGestureRecognizer(target: self, action: #selector(characterCardTapped(_:)))
         p1CharacterTwo.addGestureRecognizer(tapGesture2)
         p1CharacterTwo.isUserInteractionEnabled = true
-
+        
         let tapGesture3 = UITapGestureRecognizer(target: self, action: #selector(characterCardTapped(_:)))
         p1CharacterThree.addGestureRecognizer(tapGesture3)
         p1CharacterThree.isUserInteractionEnabled = true
@@ -162,16 +165,16 @@ class PlayerOneScene: UIViewController {
         let tapGestureStatusEffect1 = UITapGestureRecognizer(target: self, action: #selector(statusEffectCardTapped(_:)))
         p1StatusEffect.addGestureRecognizer(tapGestureStatusEffect1)
         p1StatusEffect.isUserInteractionEnabled = true
-
+        
         let tapGestureStatusEffect2 = UITapGestureRecognizer(target: self, action: #selector(statusEffectCardTapped(_:)))
         p1StatusEffectTwo.addGestureRecognizer(tapGestureStatusEffect2)
         p1StatusEffectTwo.isUserInteractionEnabled = true
-
+        
         let tapGestureStatusEffect3 = UITapGestureRecognizer(target: self, action: #selector(statusEffectCardTapped(_:)))
         p1StatusEffectThree.addGestureRecognizer(tapGestureStatusEffect3)
         p1StatusEffectThree.isUserInteractionEnabled = true
     }
-
+    
     func flip() {
         let toView = showingBack ? frontImageView : backView
         let fromView = showingBack ? backView : frontImageView
@@ -216,14 +219,33 @@ class PlayerOneScene: UIViewController {
         
     }
     
-
-
-
+    
+    
+    
     @IBAction func flipButtonTapped(_ sender: Any) {
         flip()
         flipButton.isEnabled = false
-
+        
     }
+    
+    @IBAction func characterIsNotNil(_ sender: Any) {
+        if GameManager.shared.player1 == nil {
+            // Show an alert asking the user to select a character first so they can't skip this screen
+            let alert = UIAlertController(title: "Select a Character and Status Effect!", message: "Please select a character and status effect first.", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            present(alert, animated: true, completion: nil)
+            return
+        }
+        
+        if GameManager.shared.player1!.statusEffect == nil {
+             // Show an alert asking the user to select a character first so they can't skip this screen
+             let alert = UIAlertController(title: "Select a Status Effect", message: "Please select a status effect.", preferredStyle: .alert)
+             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+             present(alert, animated: true, completion: nil)
+             return
+         }
+    }
+    
     
     @objc func characterCardTapped(_ sender: UITapGestureRecognizer) {
         guard let selectedImageView = sender.view as? UIImageView else { return }
@@ -335,5 +357,5 @@ class PlayerOneScene: UIViewController {
             return
         }
     }
-
+    
 }

@@ -80,7 +80,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screenshot 2023-04-18 at 8.47.10 AM" translatesAutoresizingMaskIntoConstraints="NO" id="Ooz-Gz-mqW">
-                                <rect key="frame" x="0.0" y="0.0" width="415" height="599"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="UIN-xR-loE">
                                 <rect key="frame" x="0.0" y="111" width="415" height="826"/>
@@ -129,6 +129,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Player 1"/>
                                                 <connections>
+                                                    <action selector="alertToPickSceneElement:" destination="Ucc-5E-g7d" eventType="touchUpInside" id="CMg-5p-LAf"/>
                                                     <segue destination="hwC-1C-pph" kind="show" id="DoF-GI-wlh"/>
                                                 </connections>
                                             </button>
@@ -281,6 +282,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Player 2" titleAlignment="center"/>
                                                         <connections>
+                                                            <action selector="characterIsNotNil:" destination="hwC-1C-pph" eventType="touchUpInside" id="fjF-jd-nhh"/>
                                                             <segue destination="1WJ-2h-zEa" kind="show" id="YC5-VS-4fa"/>
                                                         </connections>
                                                     </button>
@@ -520,6 +522,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Battle"/>
                                         <connections>
+                                            <action selector="characterIsNotNilP2:" destination="1WJ-2h-zEa" eventType="touchUpInside" id="v5a-Rh-EKq"/>
                                             <segue destination="laj-vP-obe" kind="show" id="geF-si-Sef"/>
                                         </connections>
                                     </button>
@@ -617,10 +620,10 @@
                                     <action selector="dismissButtonTapped:" destination="laj-vP-obe" eventType="touchUpInside" id="yeC-J9-MLN"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="how it happened " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kfp-Tq-Ics">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="how it happened " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kfp-Tq-Ics">
                                 <rect key="frame" x="47" y="519" width="303" height="88"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -636,6 +639,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="hJk-XJ-PRx"/>
                     <connections>
+                        <outlet property="howItHappenedLabel" destination="Kfp-Tq-Ics" id="xBI-lx-AKF"/>
                         <outlet property="playerWinnerLabel" destination="jph-KQ-aGl" id="tyF-BS-fNR"/>
                     </connections>
                 </viewController>
