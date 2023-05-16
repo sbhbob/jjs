@@ -32,6 +32,8 @@ class PlayerOneScene: UIViewController {
     
     @IBOutlet weak var p1StatusEffectThree: UIImageView!
     
+    @IBOutlet weak var player2Button: UIButton!
+    
     private let frontImageView: UIImageView! = UIImageView(image: UIImage(named: "front"))
     private let frontImageView2: UIImageView! = UIImageView(image: UIImage(named: "front"))
     private let frontImageView3: UIImageView! = UIImageView(image: UIImage(named: "front"))
@@ -58,6 +60,7 @@ class PlayerOneScene: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        player2Button.isEnabled = false
         // Hide the back button, because we have a bug rn that wont let us hit the back button cuz if we do the function to determine winner wont work.
         navigationItem.hidesBackButton = true
         
@@ -225,7 +228,7 @@ class PlayerOneScene: UIViewController {
     @IBAction func flipButtonTapped(_ sender: Any) {
         flip()
         flipButton.isEnabled = false
-        
+        player2Button.isEnabled = true
     }
     
     @IBAction func characterIsNotNil(_ sender: Any) {

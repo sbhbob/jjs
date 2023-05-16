@@ -80,7 +80,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screenshot 2023-04-18 at 8.47.10 AM" translatesAutoresizingMaskIntoConstraints="NO" id="Ooz-Gz-mqW">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <rect key="frame" x="0.0" y="0.0" width="415" height="599"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="UIN-xR-loE">
                                 <rect key="frame" x="0.0" y="111" width="415" height="826"/>
@@ -310,6 +310,7 @@
                         <outlet property="p1StatusEffect" destination="QfT-ye-1gl" id="SzL-yV-qX4"/>
                         <outlet property="p1StatusEffectThree" destination="qJo-Qf-9aO" id="LYI-N1-WrB"/>
                         <outlet property="p1StatusEffectTwo" destination="xTR-86-fOh" id="YG2-IY-Khr"/>
+                        <outlet property="player2Button" destination="Koh-Yv-qQT" id="OJ3-je-spN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SvX-f0-IB3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -542,6 +543,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="LgO-Jx-D0Q"/>
                     <connections>
+                        <outlet property="battleButton" destination="Lo2-ZW-SFq" id="ctQ-aX-QTZ"/>
                         <outlet property="p2CharacterCard1" destination="3lg-2Q-QAw" id="b1v-2R-RsN"/>
                         <outlet property="p2CharacterCard2" destination="8GL-bv-RF3" id="dvO-zW-vGP"/>
                         <outlet property="p2CharacterCard3" destination="Wgw-hW-fgR" id="d8Z-Cl-PXu"/>
