@@ -255,6 +255,7 @@ class PlayerTwoScene: UIViewController {
     }
     
     @objc func characterCardTapped(_ sender: UITapGestureRecognizer) {
+        guard !p2FlipButton.isEnabled else { return }
         guard let selectedImageView = sender.view as? UIImageView else { return }
         // Dismiss other character cards and animate the dismissal
         if characterTapped == false {
@@ -308,6 +309,7 @@ class PlayerTwoScene: UIViewController {
     }
     
     @objc func statusEffectCardTapped(_ sender: UITapGestureRecognizer) {
+        guard !p2FlipButton.isEnabled else { return }
         guard let selectedImageView = sender.view as? UIImageView else { return }
         
         if GameManager.shared.player2 == nil {
