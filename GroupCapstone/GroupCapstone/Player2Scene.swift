@@ -42,6 +42,8 @@ class PlayerTwoScene: UIViewController {
     @IBOutlet weak var p2DebuffCard3: UIImageView!
     
     
+    @IBOutlet weak var battleButton: UIButton!
+    
     private let frontImageView: UIImageView! = UIImageView(image: UIImage(named: "front"))
     private let frontImageView2: UIImageView! = UIImageView(image: UIImage(named: "front"))
     private let frontImageView3: UIImageView! = UIImageView(image: UIImage(named: "front"))
@@ -62,6 +64,7 @@ class PlayerTwoScene: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        battleButton.isEnabled = false
         // Hide the back button, because we have a bug rn that wont let us hit the back button cuz if we do the function to determine winner wont work.
         navigationItem.hidesBackButton = true
         
@@ -229,7 +232,8 @@ class PlayerTwoScene: UIViewController {
     
     @IBAction func p2FlipButtonTapped(_ sender: Any) {
         flip()
-        p2FlipButton.isHidden = true
+        p2FlipButton.isEnabled = false
+        battleButton.isEnabled = true
     }
     
     @IBAction func characterIsNotNilP2(_ sender: Any) {
