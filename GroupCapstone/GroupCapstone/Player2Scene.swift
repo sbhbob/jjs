@@ -83,6 +83,7 @@ class PlayerTwoScene: UIViewController {
         let labelViewStatus2 = allViewsInXibArrayStatus2?.first as! FrontCard
         let labelViewStatus3 = allViewsInXibArrayStatus3?.first as! FrontCard
         
+
         
         // Handle image tap here
         
