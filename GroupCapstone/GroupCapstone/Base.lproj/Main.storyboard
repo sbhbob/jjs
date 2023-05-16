@@ -81,6 +81,101 @@
             </objects>
             <point key="canvasLocation" x="1448.0916030534352" y="-27.464788732394368"/>
         </scene>
+
+        <!--Battle Scene View Controller--
+
+        <scene sceneID="3Hc-UY-tAZ">
+            <objects>
+                <viewController id="Ucc-5E-g7d" customClass="BattleSceneViewController" customModule="GroupCapstone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GNc-3L-azZ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screenshot 2023-04-18 at 8.47.10 AM" translatesAutoresizingMaskIntoConstraints="NO" id="Ooz-Gz-mqW">
+                                <rect key="frame" x="0.0" y="0.0" width="415" height="599"/>
+
+
+
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="UIN-xR-loE">
+                                <rect key="frame" x="0.0" y="111" width="415" height="826"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="38" id="Omf-CP-iKg">
+                                        <rect key="frame" x="0.0" y="0.0" width="415" height="728"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="B7u-3Z-p89">
+                                                <rect key="frame" x="0.0" y="0.0" width="415" height="728"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Armies Display (3)" translatesAutoresizingMaskIntoConstraints="NO" id="iXh-4h-67X">
+                                                        <rect key="frame" x="0.0" y="0.0" width="415" height="100"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="100" id="sSI-WJ-5kl"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="10" translatesAutoresizingMaskIntoConstraints="NO" id="2eJ-DM-nw4">
+                                                        <rect key="frame" x="0.0" y="101" width="415" height="627"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="2eJ-DM-nw4" firstAttribute="centerY" secondItem="B7u-3Z-p89" secondAttribute="centerY" id="qbU-d2-AuR"/>
+                                                    <constraint firstItem="2eJ-DM-nw4" firstAttribute="centerX" secondItem="B7u-3Z-p89" secondAttribute="centerX" id="wRh-bJ-4va"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="wUj-9f-hVo">
+                                        <rect key="frame" x="75.666666666666686" y="736" width="264" height="90"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ndG-rR-EzP">
+                                                <rect key="frame" x="0.0" y="0.0" width="264" height="47.666666666666664"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="tinted" title="Pick Scene of Battle">
+                                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
+                                                    <color key="baseForegroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                                    <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="randomElement:" destination="Ucc-5E-g7d" eventType="touchUpInside" id="zqa-Eb-v4a"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mgI-6Z-0p4">
+                                                <rect key="frame" x="90.666666666666657" y="55.666666666666629" width="82.666666666666657" height="34.333333333333343"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Player 1"/>
+                                                <connections>
+                                                    <action selector="alertToPickSceneElement:" destination="Ucc-5E-g7d" eventType="touchUpInside" id="CMg-5p-LAf"/>
+                                                    <segue destination="hwC-1C-pph" kind="show" id="DoF-GI-wlh"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KSh-ke-3zI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="UIN-xR-loE" firstAttribute="leading" secondItem="GNc-3L-azZ" secondAttribute="leading" id="G5i-Yg-gh3"/>
+                            <constraint firstItem="KSh-ke-3zI" firstAttribute="bottom" secondItem="UIN-xR-loE" secondAttribute="bottom" constant="8" id="NXj-NL-MOl"/>
+                            <constraint firstAttribute="bottom" secondItem="Ooz-Gz-mqW" secondAttribute="bottom" id="QY3-tv-s07"/>
+                            <constraint firstItem="UIN-xR-loE" firstAttribute="top" secondItem="KSh-ke-3zI" secondAttribute="top" constant="8" id="fqh-wb-yXe"/>
+                            <constraint firstAttribute="trailing" secondItem="Ooz-Gz-mqW" secondAttribute="trailing" id="gyj-xy-bVr"/>
+                            <constraint firstItem="Ooz-Gz-mqW" firstAttribute="leading" secondItem="KSh-ke-3zI" secondAttribute="leading" id="oWK-w3-VZg"/>
+                            <constraint firstItem="Ooz-Gz-mqW" firstAttribute="top" secondItem="GNc-3L-azZ" secondAttribute="top" constant="10" id="rLu-KO-neJ"/>
+                            <constraint firstItem="Ooz-Gz-mqW" firstAttribute="top" secondItem="GNc-3L-azZ" secondAttribute="top" id="sYn-LT-z5a"/>
+                            <constraint firstAttribute="trailing" secondItem="UIN-xR-loE" secondAttribute="trailing" id="u4F-hk-1Tp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="jdg-AJ-d2i"/>
+                    <connections>
+                        <outlet property="BattleSceneImage" destination="2eJ-DM-nw4" id="p3S-aK-vX8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b0l-5P-P4Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2191.6030534351144" y="-19.014084507042256"/>
+        </scene>
         <!--Player One Scene-->
         <scene sceneID="VAp-FL-u7c">
             <objects>
@@ -243,6 +338,7 @@
                         <outlet property="p1StatusEffect" destination="QfT-ye-1gl" id="SzL-yV-qX4"/>
                         <outlet property="p1StatusEffectThree" destination="qJo-Qf-9aO" id="LYI-N1-WrB"/>
                         <outlet property="p1StatusEffectTwo" destination="xTR-86-fOh" id="YG2-IY-Khr"/>
+                        <outlet property="player2Button" destination="Koh-Yv-qQT" id="OJ3-je-spN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SvX-f0-IB3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -487,6 +583,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="LgO-Jx-D0Q"/>
                     <connections>
+                        <outlet property="battleButton" destination="Lo2-ZW-SFq" id="ctQ-aX-QTZ"/>
                         <outlet property="p2CharacterCard1" destination="3lg-2Q-QAw" id="b1v-2R-RsN"/>
                         <outlet property="p2CharacterCard2" destination="8GL-bv-RF3" id="dvO-zW-vGP"/>
                         <outlet property="p2CharacterCard3" destination="Wgw-hW-fgR" id="d8Z-Cl-PXu"/>

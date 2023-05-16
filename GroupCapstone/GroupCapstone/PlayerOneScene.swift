@@ -16,6 +16,7 @@ class PlayerOneScene: UIViewController {
     var characters: [Character] = []
     var statusEffect: [StatusEffect] = []
     
+    
     //PLAYER 1
     
     @IBOutlet weak var flipButton: UIButton!
@@ -31,6 +32,8 @@ class PlayerOneScene: UIViewController {
     @IBOutlet weak var p1StatusEffectTwo: UIImageView!
     
     @IBOutlet weak var p1StatusEffectThree: UIImageView!
+    
+    @IBOutlet weak var player2Button: UIButton!
     
     private let frontImageView: UIImageView! = UIImageView(image: UIImage(named: "front"))
     private let frontImageView2: UIImageView! = UIImageView(image: UIImage(named: "front"))
@@ -58,6 +61,7 @@ class PlayerOneScene: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        player2Button.isEnabled = false
         // Hide the back button, because we have a bug rn that wont let us hit the back button cuz if we do the function to determine winner wont work.
         navigationItem.hidesBackButton = true
         
@@ -226,6 +230,7 @@ class PlayerOneScene: UIViewController {
     @IBAction func flipButtonTapped(_ sender: Any) {
         flip()
         flipButton.isEnabled = false
+        player2Button.isEnabled = true
         
     }
     
@@ -249,6 +254,7 @@ class PlayerOneScene: UIViewController {
     
     
     @objc func characterCardTapped(_ sender: UITapGestureRecognizer) {
+        guard !flipButton.isEnabled else { return }
         guard let selectedImageView = sender.view as? UIImageView else { return }
         // Dismiss other character cards and animate the dismissal
         if characterTapped == false {
@@ -302,8 +308,8 @@ class PlayerOneScene: UIViewController {
     }
     
     @objc func statusEffectCardTapped(_ sender: UITapGestureRecognizer) {
+        guard !flipButton.isEnabled else { return }
         guard let selectedImageView = sender.view as? UIImageView else { return }
-        
         if GameManager.shared.player1 == nil {
             // Show an alert asking the user to select a character first
             let alert = UIAlertController(title: "Select a Character", message: "Please select a character first.", preferredStyle: .alert)
