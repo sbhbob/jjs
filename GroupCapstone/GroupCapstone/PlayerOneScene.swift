@@ -180,6 +180,7 @@ class PlayerOneScene: UIViewController {
         let fromView = showingBack ? backView : frontImageView
         UIView.transition(from: fromView!, to: toView!, duration: 1, options: .transitionFlipFromRight, completion: nil)
         toView!.translatesAutoresizingMaskIntoConstraints = true
+       
         
         toView?.frame = p1CharacterOne.bounds
         
