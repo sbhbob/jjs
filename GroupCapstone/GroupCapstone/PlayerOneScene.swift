@@ -16,6 +16,7 @@ class PlayerOneScene: UIViewController {
     var characters: [Character] = []
     var statusEffect: [StatusEffect] = []
     
+    
     //PLAYER 1
     
     @IBOutlet weak var flipButton: UIButton!
@@ -229,6 +230,7 @@ class PlayerOneScene: UIViewController {
         flip()
         flipButton.isEnabled = false
         player2Button.isEnabled = true
+        
     }
     
     @IBAction func characterIsNotNil(_ sender: Any) {
@@ -251,6 +253,7 @@ class PlayerOneScene: UIViewController {
     
     
     @objc func characterCardTapped(_ sender: UITapGestureRecognizer) {
+        guard !flipButton.isEnabled else { return }
         guard let selectedImageView = sender.view as? UIImageView else { return }
         // Dismiss other character cards and animate the dismissal
         if characterTapped == false {
@@ -304,8 +307,8 @@ class PlayerOneScene: UIViewController {
     }
     
     @objc func statusEffectCardTapped(_ sender: UITapGestureRecognizer) {
+        guard !flipButton.isEnabled else { return }
         guard let selectedImageView = sender.view as? UIImageView else { return }
-        
         if GameManager.shared.player1 == nil {
             // Show an alert asking the user to select a character first
             let alert = UIAlertController(title: "Select a Character", message: "Please select a character first.", preferredStyle: .alert)
